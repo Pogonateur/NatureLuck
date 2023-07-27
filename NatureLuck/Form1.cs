@@ -97,15 +97,15 @@ namespace NatureLuck
         {
             if (total > 0)
             {
-                percentAssure.Text = assurePercent.ToString()+"%";
-                percentBizarre.Text = bizarrePercent.ToString()+"%";
-                percentBrave.Text = bravePercent.ToString()+"%";
+                percentAssure.Text = assurePercent.ToString() + "%";
+                percentBizarre.Text = bizarrePercent.ToString() + "%";
+                percentBrave.Text = bravePercent.ToString() + "%";
                 percentCalme.Text = calmePercent.ToString() + "%";
                 percentDiscret.Text = discretPercent.ToString() + "%";
                 percentDocile.Text = docilePercent.ToString() + "%";
                 percentDoux.Text = douxPercent.ToString() + "%";
                 percentFoufou.Text = foufouPercent.ToString() + "%";
-                percentGentil.Text = gentilPercent.ToString()+ "%";
+                percentGentil.Text = gentilPercent.ToString() + "%";
                 percentHardi.Text = hardiPercent.ToString() + "%";
                 percentJovial.Text = jovialPercent.ToString() + "%";
                 percentLache.Text = lachePercent.ToString() + "%";
@@ -153,6 +153,11 @@ namespace NatureLuck
             }
         }
 
+        private void updateRencontres()
+        {
+            rencontresLbl.Text = "Rencontrés : " + total;
+        }
+
         private void subAssure_Click(object sender, EventArgs e)
         {
             if (assure > 0)
@@ -162,6 +167,7 @@ namespace NatureLuck
                 assureCount.Text = assure.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -172,6 +178,7 @@ namespace NatureLuck
             assureCount.Text = assure.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subModeste_Click(object sender, EventArgs e)
@@ -183,6 +190,7 @@ namespace NatureLuck
                 modesteCount.Text = modeste.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
         private void addModeste_Click(object sender, EventArgs e)
@@ -192,6 +200,7 @@ namespace NatureLuck
             modesteCount.Text = modeste.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
         private void subBizarre_Click(object sender, EventArgs e)
         {
@@ -202,6 +211,7 @@ namespace NatureLuck
                 bizarreCount.Text = bizarre.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -212,6 +222,7 @@ namespace NatureLuck
             bizarreCount.Text = bizarre.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subBrave_Click(object sender, EventArgs e)
@@ -223,6 +234,7 @@ namespace NatureLuck
                 braveCount.Text = brave.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -233,6 +245,7 @@ namespace NatureLuck
             braveCount.Text = brave.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subDiscret_Click(object sender, EventArgs e)
@@ -244,6 +257,7 @@ namespace NatureLuck
                 discretCount.Text = discret.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -254,6 +268,7 @@ namespace NatureLuck
             discretCount.Text = discret.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subDocile_Click(object sender, EventArgs e)
@@ -265,6 +280,7 @@ namespace NatureLuck
                 docileCount.Text = docile.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -275,6 +291,7 @@ namespace NatureLuck
             docileCount.Text = docile.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subDoux_Click(object sender, EventArgs e)
@@ -286,6 +303,7 @@ namespace NatureLuck
                 douxCount.Text = doux.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -296,6 +314,7 @@ namespace NatureLuck
             douxCount.Text = doux.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subFou_Click(object sender, EventArgs e)
@@ -307,6 +326,7 @@ namespace NatureLuck
                 foufouCount.Text = foufou.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -317,6 +337,7 @@ namespace NatureLuck
             foufouCount.Text = foufou.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subGentil_Click(object sender, EventArgs e)
@@ -328,6 +349,7 @@ namespace NatureLuck
                 gentilCount.Text = gentil.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -338,6 +360,7 @@ namespace NatureLuck
             gentilCount.Text = gentil.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subHardi_Click(object sender, EventArgs e)
@@ -349,6 +372,7 @@ namespace NatureLuck
                 hardiCount.Text = hardi.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -359,6 +383,7 @@ namespace NatureLuck
             hardiCount.Text = hardi.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subJovial_Click(object sender, EventArgs e)
@@ -370,6 +395,7 @@ namespace NatureLuck
                 jovialCount.Text = jovial.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -380,6 +406,7 @@ namespace NatureLuck
             jovialCount.Text = jovial.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subLache_Click(object sender, EventArgs e)
@@ -391,6 +418,7 @@ namespace NatureLuck
                 lacheCount.Text = lache.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -401,6 +429,7 @@ namespace NatureLuck
             lacheCount.Text = lache.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subMalin_Click(object sender, EventArgs e)
@@ -412,6 +441,7 @@ namespace NatureLuck
                 malinCount.Text = malin.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -422,6 +452,7 @@ namespace NatureLuck
             malinCount.Text = malin.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subMalpoli_Click(object sender, EventArgs e)
@@ -433,6 +464,7 @@ namespace NatureLuck
                 malpoliCount.Text = malpoli.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -443,6 +475,7 @@ namespace NatureLuck
             malpoliCount.Text = malpoli.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subMauvais_Click(object sender, EventArgs e)
@@ -454,6 +487,7 @@ namespace NatureLuck
                 mauvaisCount.Text = mauvais.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -464,6 +498,7 @@ namespace NatureLuck
             mauvaisCount.Text = mauvais.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subNaif_Click(object sender, EventArgs e)
@@ -475,6 +510,7 @@ namespace NatureLuck
                 naifCount.Text = naif.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -485,6 +521,7 @@ namespace NatureLuck
             naifCount.Text = naif.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subPresse_Click(object sender, EventArgs e)
@@ -496,6 +533,7 @@ namespace NatureLuck
                 presseCount.Text = presse.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -506,6 +544,7 @@ namespace NatureLuck
             presseCount.Text = presse.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subPrudent_Click(object sender, EventArgs e)
@@ -517,6 +556,7 @@ namespace NatureLuck
                 prudentCount.Text = prudent.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -527,6 +567,7 @@ namespace NatureLuck
             prudentCount.Text = prudent.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subPudique_Click(object sender, EventArgs e)
@@ -538,6 +579,7 @@ namespace NatureLuck
                 pudiqueCount.Text = pudique.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -548,6 +590,7 @@ namespace NatureLuck
             pudiqueCount.Text = pudique.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subRelax_Click(object sender, EventArgs e)
@@ -559,6 +602,7 @@ namespace NatureLuck
                 relaxCount.Text = relax.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -569,6 +613,7 @@ namespace NatureLuck
             relaxCount.Text = relax.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subRigide_Click(object sender, EventArgs e)
@@ -580,6 +625,7 @@ namespace NatureLuck
                 rigideCount.Text = rigide.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -590,6 +636,7 @@ namespace NatureLuck
             rigideCount.Text = rigide.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subSerieux_Click(object sender, EventArgs e)
@@ -601,6 +648,7 @@ namespace NatureLuck
                 serieuxCount.Text = serieux.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -611,6 +659,7 @@ namespace NatureLuck
             serieuxCount.Text = serieux.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subSolo_Click(object sender, EventArgs e)
@@ -622,6 +671,7 @@ namespace NatureLuck
                 soloCount.Text = solo.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -632,6 +682,7 @@ namespace NatureLuck
             soloCount.Text = solo.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subTimide_Click(object sender, EventArgs e)
@@ -643,6 +694,7 @@ namespace NatureLuck
                 timideCount.Text = timide.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -653,6 +705,7 @@ namespace NatureLuck
             timideCount.Text = timide.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
 
         private void subCalme_Click(object sender, EventArgs e)
@@ -664,6 +717,7 @@ namespace NatureLuck
                 calmeCount.Text = calme.ToString();
                 reCalculatePercents();
                 updatePercents();
+                updateRencontres();
             }
         }
 
@@ -674,6 +728,7 @@ namespace NatureLuck
             calmeCount.Text = calme.ToString();
             reCalculatePercents();
             updatePercents();
+            updateRencontres();
         }
     }
 }

@@ -153,7 +153,7 @@
             modesteCount = new TextBox();
             subModeste = new Button();
             addModeste = new Button();
-            label1 = new Label();
+            rencontresLbl = new Label();
             SuspendLayout();
             // 
             // addAssure
@@ -1281,22 +1281,22 @@
             addModeste.UseVisualStyleBackColor = true;
             addModeste.Click += addModeste_Click;
             // 
-            // label1
+            // rencontresLbl
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(12, 646);
-            label1.Name = "label1";
-            label1.Size = new Size(171, 30);
-            label1.TabIndex = 125;
-            label1.Text = "BTW, 1/25 is 4%";
+            rencontresLbl.AutoSize = true;
+            rencontresLbl.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            rencontresLbl.Location = new Point(12, 646);
+            rencontresLbl.Name = "rencontresLbl";
+            rencontresLbl.Size = new Size(140, 30);
+            rencontresLbl.TabIndex = 125;
+            rencontresLbl.Text = "Rencontrés : ";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(599, 685);
-            Controls.Add(label1);
+            Controls.Add(rencontresLbl);
             Controls.Add(label49);
             Controls.Add(percentModeste);
             Controls.Add(modesteCount);
@@ -1555,6 +1555,6 @@
         private TextBox modesteCount;
         private Button subModeste;
         private Button addModeste;
-        private Label label1;
+        private Label rencontresLbl;
     }
 }
