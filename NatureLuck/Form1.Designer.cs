@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             addAssure = new Button();
             subAssure = new Button();
             assureCount = new TextBox();
@@ -154,6 +157,9 @@
             subModeste = new Button();
             addModeste = new Button();
             rencontresLbl = new Label();
+            percentChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            displayChartBtn = new Button();
+            ((System.ComponentModel.ISupportInitialize)percentChart).BeginInit();
             SuspendLayout();
             // 
             // addAssure
@@ -1291,11 +1297,40 @@
             rencontresLbl.TabIndex = 125;
             rencontresLbl.Text = "Rencontrés : ";
             // 
+            // percentChart
+            // 
+            chartArea1.Name = "ChartArea1";
+            percentChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            percentChart.Legends.Add(legend1);
+            percentChart.Location = new Point(12, 338);
+            percentChart.Name = "percentChart";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "%age";
+            percentChart.Series.Add(series1);
+            percentChart.Size = new Size(575, 300);
+            percentChart.TabIndex = 126;
+            percentChart.Text = "Graphique en barre des pourcents";
+            percentChart.Visible = false;
+            // 
+            // displayChartBtn
+            // 
+            displayChartBtn.Location = new Point(12, 309);
+            displayChartBtn.Name = "displayChartBtn";
+            displayChartBtn.Size = new Size(75, 23);
+            displayChartBtn.TabIndex = 127;
+            displayChartBtn.Text = "Graph";
+            displayChartBtn.UseVisualStyleBackColor = true;
+            displayChartBtn.Click += displayChartBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(599, 685);
+            Controls.Add(displayChartBtn);
+            Controls.Add(percentChart);
             Controls.Add(rencontresLbl);
             Controls.Add(label49);
             Controls.Add(percentModeste);
@@ -1424,6 +1459,8 @@
             Controls.Add(addAssure);
             Name = "Form1";
             Text = "NatureLuck";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)percentChart).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1556,5 +1593,7 @@
         private Button subModeste;
         private Button addModeste;
         private Label rencontresLbl;
+        private System.Windows.Forms.DataVisualization.Charting.Chart percentChart;
+        private Button displayChartBtn;
     }
 }

@@ -158,6 +158,36 @@ namespace NatureLuck
             rencontresLbl.Text = "Rencontrés : " + total;
         }
 
+        private void updateChart()
+        {
+            percentChart.Series["%age"].Points.Clear();
+            percentChart.Series["%age"].Points.AddXY("Assuré", assurePercent);
+            percentChart.Series["%age"].Points.AddXY("Bizarre", bizarrePercent);
+            percentChart.Series["%age"].Points.AddXY("Brave", bravePercent);
+            percentChart.Series["%age"].Points.AddXY("Calme", calmePercent);
+            percentChart.Series["%age"].Points.AddXY("Discret", discretPercent);
+            percentChart.Series["%age"].Points.AddXY("Docile", docilePercent);
+            percentChart.Series["%age"].Points.AddXY("Doux", douxPercent);
+            percentChart.Series["%age"].Points.AddXY("Foufou", foufouPercent);
+            percentChart.Series["%age"].Points.AddXY("Gentil", gentilPercent);
+            percentChart.Series["%age"].Points.AddXY("Hardi", hardiPercent);
+            percentChart.Series["%age"].Points.AddXY("Jovial", jovialPercent);
+            percentChart.Series["%age"].Points.AddXY("Lâche", lachePercent);
+            percentChart.Series["%age"].Points.AddXY("Malin", malinPercent);
+            percentChart.Series["%age"].Points.AddXY("Malpoli", malpoliPercent);
+            percentChart.Series["%age"].Points.AddXY("Mauvais", mauvaisPercent);
+            percentChart.Series["%age"].Points.AddXY("Modeste", modestePercent);
+            percentChart.Series["%age"].Points.AddXY("Naïf", naifPercent);
+            percentChart.Series["%age"].Points.AddXY("Pressé", pressePercent);
+            percentChart.Series["%age"].Points.AddXY("Prudent", prudentPercent);
+            percentChart.Series["%age"].Points.AddXY("Pudique", pudiquePercent);
+            percentChart.Series["%age"].Points.AddXY("Relax", relaxPercent);
+            percentChart.Series["%age"].Points.AddXY("Rigide", rigidePercent);
+            percentChart.Series["%age"].Points.AddXY("Sérieux", serieuxPercent);
+            percentChart.Series["%age"].Points.AddXY("Solo", soloPercent);
+            percentChart.Series["%age"].Points.AddXY("Timide", timidePercent);
+        }
+
         private void subAssure_Click(object sender, EventArgs e)
         {
             if (assure > 0)
@@ -168,6 +198,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -179,6 +210,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subModeste_Click(object sender, EventArgs e)
@@ -191,6 +223,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
         private void addModeste_Click(object sender, EventArgs e)
@@ -201,6 +234,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
         private void subBizarre_Click(object sender, EventArgs e)
         {
@@ -212,6 +246,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -223,6 +258,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subBrave_Click(object sender, EventArgs e)
@@ -235,6 +271,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -246,6 +283,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subDiscret_Click(object sender, EventArgs e)
@@ -258,6 +296,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -269,6 +308,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subDocile_Click(object sender, EventArgs e)
@@ -281,6 +321,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -292,6 +333,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subDoux_Click(object sender, EventArgs e)
@@ -304,6 +346,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -315,6 +358,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subFou_Click(object sender, EventArgs e)
@@ -327,6 +371,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -338,6 +383,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subGentil_Click(object sender, EventArgs e)
@@ -350,6 +396,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -361,6 +408,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subHardi_Click(object sender, EventArgs e)
@@ -373,6 +421,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -384,6 +433,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subJovial_Click(object sender, EventArgs e)
@@ -396,6 +446,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -407,6 +458,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subLache_Click(object sender, EventArgs e)
@@ -419,6 +471,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -430,6 +483,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subMalin_Click(object sender, EventArgs e)
@@ -442,6 +496,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -453,6 +508,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subMalpoli_Click(object sender, EventArgs e)
@@ -465,6 +521,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -476,6 +533,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subMauvais_Click(object sender, EventArgs e)
@@ -488,6 +546,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -499,6 +558,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subNaif_Click(object sender, EventArgs e)
@@ -511,6 +571,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -522,6 +583,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subPresse_Click(object sender, EventArgs e)
@@ -534,6 +596,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -545,6 +608,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subPrudent_Click(object sender, EventArgs e)
@@ -557,6 +621,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -568,6 +633,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subPudique_Click(object sender, EventArgs e)
@@ -580,6 +646,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -591,6 +658,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subRelax_Click(object sender, EventArgs e)
@@ -603,6 +671,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -614,6 +683,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subRigide_Click(object sender, EventArgs e)
@@ -626,6 +696,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -637,6 +708,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subSerieux_Click(object sender, EventArgs e)
@@ -649,6 +721,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -660,6 +733,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subSolo_Click(object sender, EventArgs e)
@@ -672,6 +746,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -683,6 +758,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subTimide_Click(object sender, EventArgs e)
@@ -695,6 +771,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -706,6 +783,7 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
         }
 
         private void subCalme_Click(object sender, EventArgs e)
@@ -718,6 +796,7 @@ namespace NatureLuck
                 reCalculatePercents();
                 updatePercents();
                 updateRencontres();
+                updateChart();
             }
         }
 
@@ -729,6 +808,42 @@ namespace NatureLuck
             reCalculatePercents();
             updatePercents();
             updateRencontres();
+            updateChart();
+        }
+
+        private void displayChartBtn_Click(object sender, EventArgs e)
+        {
+            percentChart.Visible = !percentChart.Visible;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            percentChart.Series["%age"].Points.AddXY("Assuré", 0);
+            percentChart.Series["%age"].Points.AddXY("Bizarre", 0);
+            percentChart.Series["%age"].Points.AddXY("Brave", 0);
+            percentChart.Series["%age"].Points.AddXY("Calme", 0);
+            percentChart.Series["%age"].Points.AddXY("Discret", 0);
+            percentChart.Series["%age"].Points.AddXY("Docile", 0);
+            percentChart.Series["%age"].Points.AddXY("Doux", 0);
+            percentChart.Series["%age"].Points.AddXY("Foufou", 0);
+            percentChart.Series["%age"].Points.AddXY("Gentil", 0);
+            percentChart.Series["%age"].Points.AddXY("Hardi", 0);
+            percentChart.Series["%age"].Points.AddXY("Jovial", 0);
+            percentChart.Series["%age"].Points.AddXY("Lâche", 0);
+            percentChart.Series["%age"].Points.AddXY("Malin", 0);
+            percentChart.Series["%age"].Points.AddXY("Malpoli", 0);
+            percentChart.Series["%age"].Points.AddXY("Mauvais", 0);
+            percentChart.Series["%age"].Points.AddXY("Modeste", 0);
+            percentChart.Series["%age"].Points.AddXY("Naïf", 0);
+            percentChart.Series["%age"].Points.AddXY("Pressé", 0);
+            percentChart.Series["%age"].Points.AddXY("Prudent", 0);
+            percentChart.Series["%age"].Points.AddXY("Pudique", 0);
+            percentChart.Series["%age"].Points.AddXY("Relax", 0);
+            percentChart.Series["%age"].Points.AddXY("Rigide", 0);
+            percentChart.Series["%age"].Points.AddXY("Sérieux", 0);
+            percentChart.Series["%age"].Points.AddXY("Solo", 0);
+            percentChart.Series["%age"].Points.AddXY("Timide", 0);
+            percentChart.Series["%age"]["PixelPointWidth"] = "3";
         }
     }
 }
