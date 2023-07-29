@@ -31,6 +31,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             addAssure = new Button();
             subAssure = new Button();
             assureCount = new TextBox();
@@ -1457,6 +1458,7 @@
             Controls.Add(assureCount);
             Controls.Add(subAssure);
             Controls.Add(addAssure);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "NatureLuck";
             Load += Form1_Load;
