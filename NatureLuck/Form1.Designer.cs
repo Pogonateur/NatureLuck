@@ -1122,7 +1122,6 @@
             label43.Size = new Size(41, 15);
             label43.TabIndex = 119;
             label43.Text = "Calme";
-            label43.Click += label43_Click;
             // 
             // percentCalme
             // 
@@ -1132,7 +1131,6 @@
             percentCalme.Size = new Size(12, 15);
             percentCalme.TabIndex = 118;
             percentCalme.Text = "-";
-            percentCalme.Click += percentCalme_Click;
             // 
             // calmeCount
             // 
@@ -1140,7 +1138,6 @@
             calmeCount.Name = "calmeCount";
             calmeCount.Size = new Size(34, 23);
             calmeCount.TabIndex = 117;
-            calmeCount.TextChanged += calmeCount_TextChanged;
             // 
             // subCalme
             // 
