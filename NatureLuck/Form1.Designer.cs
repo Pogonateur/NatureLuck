@@ -160,6 +160,12 @@
             rencontresLbl = new Label();
             percentChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             displayChartBtn = new Button();
+            label1 = new Label();
+            percentNotChecked = new Label();
+            notCheckedCount = new TextBox();
+            subNotChecked = new Button();
+            addNotChecked = new Button();
+            showInChartCheckBox = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)percentChart).BeginInit();
             SuspendLayout();
             // 
@@ -301,7 +307,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(155, 233);
+            label7.Location = new Point(155, 274);
             label7.Name = "label7";
             label7.Size = new Size(35, 15);
             label7.TabIndex = 29;
@@ -310,7 +316,7 @@
             // percentDoux
             // 
             percentDoux.AutoSize = true;
-            percentDoux.Location = new Point(230, 254);
+            percentDoux.Location = new Point(230, 295);
             percentDoux.Name = "percentDoux";
             percentDoux.Size = new Size(12, 15);
             percentDoux.TabIndex = 28;
@@ -318,14 +324,14 @@
             // 
             // douxCount
             // 
-            douxCount.Location = new Point(155, 251);
+            douxCount.Location = new Point(155, 292);
             douxCount.Name = "douxCount";
             douxCount.Size = new Size(34, 23);
             douxCount.TabIndex = 27;
             // 
             // subDoux
             // 
-            subDoux.Location = new Point(119, 250);
+            subDoux.Location = new Point(119, 291);
             subDoux.Name = "subDoux";
             subDoux.Size = new Size(30, 23);
             subDoux.TabIndex = 26;
@@ -335,7 +341,7 @@
             // 
             // addDoux
             // 
-            addDoux.Location = new Point(195, 250);
+            addDoux.Location = new Point(195, 291);
             addDoux.Name = "addDoux";
             addDoux.Size = new Size(29, 23);
             addDoux.TabIndex = 25;
@@ -346,7 +352,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(155, 189);
+            label9.Location = new Point(155, 230);
             label9.Name = "label9";
             label9.Size = new Size(40, 15);
             label9.TabIndex = 24;
@@ -355,7 +361,7 @@
             // percentDocile
             // 
             percentDocile.AutoSize = true;
-            percentDocile.Location = new Point(230, 210);
+            percentDocile.Location = new Point(230, 251);
             percentDocile.Name = "percentDocile";
             percentDocile.Size = new Size(12, 15);
             percentDocile.TabIndex = 23;
@@ -363,14 +369,14 @@
             // 
             // docileCount
             // 
-            docileCount.Location = new Point(155, 207);
+            docileCount.Location = new Point(155, 248);
             docileCount.Name = "docileCount";
             docileCount.Size = new Size(34, 23);
             docileCount.TabIndex = 22;
             // 
             // subDocile
             // 
-            subDocile.Location = new Point(119, 206);
+            subDocile.Location = new Point(119, 247);
             subDocile.Name = "subDocile";
             subDocile.Size = new Size(30, 23);
             subDocile.TabIndex = 21;
@@ -380,7 +386,7 @@
             // 
             // addDocile
             // 
-            addDocile.Location = new Point(195, 206);
+            addDocile.Location = new Point(195, 247);
             addDocile.Name = "addDocile";
             addDocile.Size = new Size(29, 23);
             addDocile.TabIndex = 20;
@@ -391,7 +397,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(155, 145);
+            label11.Location = new Point(155, 186);
             label11.Name = "label11";
             label11.Size = new Size(43, 15);
             label11.TabIndex = 19;
@@ -400,7 +406,7 @@
             // percentDiscret
             // 
             percentDiscret.AutoSize = true;
-            percentDiscret.Location = new Point(230, 166);
+            percentDiscret.Location = new Point(230, 207);
             percentDiscret.Name = "percentDiscret";
             percentDiscret.Size = new Size(12, 15);
             percentDiscret.TabIndex = 18;
@@ -408,14 +414,14 @@
             // 
             // discretCount
             // 
-            discretCount.Location = new Point(155, 163);
+            discretCount.Location = new Point(155, 204);
             discretCount.Name = "discretCount";
             discretCount.Size = new Size(34, 23);
             discretCount.TabIndex = 17;
             // 
             // subDiscret
             // 
-            subDiscret.Location = new Point(119, 162);
+            subDiscret.Location = new Point(119, 203);
             subDiscret.Name = "subDiscret";
             subDiscret.Size = new Size(30, 23);
             subDiscret.TabIndex = 16;
@@ -425,7 +431,7 @@
             // 
             // addDiscret
             // 
-            addDiscret.Location = new Point(195, 162);
+            addDiscret.Location = new Point(195, 203);
             addDiscret.Name = "addDiscret";
             addDiscret.Size = new Size(29, 23);
             addDiscret.TabIndex = 15;
@@ -436,7 +442,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(155, 365);
+            label13.Location = new Point(155, 406);
             label13.Name = "label13";
             label13.Size = new Size(36, 15);
             label13.TabIndex = 44;
@@ -445,7 +451,7 @@
             // percentHardi
             // 
             percentHardi.AutoSize = true;
-            percentHardi.Location = new Point(230, 386);
+            percentHardi.Location = new Point(230, 427);
             percentHardi.Name = "percentHardi";
             percentHardi.Size = new Size(12, 15);
             percentHardi.TabIndex = 43;
@@ -453,14 +459,14 @@
             // 
             // hardiCount
             // 
-            hardiCount.Location = new Point(155, 383);
+            hardiCount.Location = new Point(155, 424);
             hardiCount.Name = "hardiCount";
             hardiCount.Size = new Size(34, 23);
             hardiCount.TabIndex = 42;
             // 
             // subHardi
             // 
-            subHardi.Location = new Point(119, 382);
+            subHardi.Location = new Point(119, 423);
             subHardi.Name = "subHardi";
             subHardi.Size = new Size(30, 23);
             subHardi.TabIndex = 41;
@@ -470,7 +476,7 @@
             // 
             // addHardi
             // 
-            addHardi.Location = new Point(195, 382);
+            addHardi.Location = new Point(195, 423);
             addHardi.Name = "addHardi";
             addHardi.Size = new Size(29, 23);
             addHardi.TabIndex = 40;
@@ -481,7 +487,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(155, 321);
+            label15.Location = new Point(155, 362);
             label15.Name = "label15";
             label15.Size = new Size(38, 15);
             label15.TabIndex = 39;
@@ -490,7 +496,7 @@
             // percentGentil
             // 
             percentGentil.AutoSize = true;
-            percentGentil.Location = new Point(230, 342);
+            percentGentil.Location = new Point(230, 383);
             percentGentil.Name = "percentGentil";
             percentGentil.Size = new Size(12, 15);
             percentGentil.TabIndex = 38;
@@ -498,14 +504,14 @@
             // 
             // gentilCount
             // 
-            gentilCount.Location = new Point(155, 339);
+            gentilCount.Location = new Point(155, 380);
             gentilCount.Name = "gentilCount";
             gentilCount.Size = new Size(34, 23);
             gentilCount.TabIndex = 37;
             // 
             // subGentil
             // 
-            subGentil.Location = new Point(119, 338);
+            subGentil.Location = new Point(119, 379);
             subGentil.Name = "subGentil";
             subGentil.Size = new Size(30, 23);
             subGentil.TabIndex = 36;
@@ -515,7 +521,7 @@
             // 
             // addGentil
             // 
-            addGentil.Location = new Point(195, 338);
+            addGentil.Location = new Point(195, 379);
             addGentil.Name = "addGentil";
             addGentil.Size = new Size(29, 23);
             addGentil.TabIndex = 35;
@@ -526,7 +532,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(155, 277);
+            label17.Location = new Point(155, 318);
             label17.Name = "label17";
             label17.Size = new Size(45, 15);
             label17.TabIndex = 34;
@@ -535,7 +541,7 @@
             // percentFoufou
             // 
             percentFoufou.AutoSize = true;
-            percentFoufou.Location = new Point(230, 298);
+            percentFoufou.Location = new Point(230, 339);
             percentFoufou.Name = "percentFoufou";
             percentFoufou.Size = new Size(12, 15);
             percentFoufou.TabIndex = 33;
@@ -543,14 +549,14 @@
             // 
             // foufouCount
             // 
-            foufouCount.Location = new Point(155, 295);
+            foufouCount.Location = new Point(155, 336);
             foufouCount.Name = "foufouCount";
             foufouCount.Size = new Size(34, 23);
             foufouCount.TabIndex = 32;
             // 
             // subFou
             // 
-            subFou.Location = new Point(119, 294);
+            subFou.Location = new Point(119, 335);
             subFou.Name = "subFou";
             subFou.Size = new Size(30, 23);
             subFou.TabIndex = 31;
@@ -560,7 +566,7 @@
             // 
             // addFou
             // 
-            addFou.Location = new Point(195, 294);
+            addFou.Location = new Point(195, 335);
             addFou.Name = "addFou";
             addFou.Size = new Size(29, 23);
             addFou.TabIndex = 30;
@@ -571,7 +577,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(155, 497);
+            label19.Location = new Point(413, 17);
             label19.Name = "label19";
             label19.Size = new Size(37, 15);
             label19.TabIndex = 59;
@@ -580,7 +586,7 @@
             // percentMalin
             // 
             percentMalin.AutoSize = true;
-            percentMalin.Location = new Point(230, 518);
+            percentMalin.Location = new Point(488, 38);
             percentMalin.Name = "percentMalin";
             percentMalin.Size = new Size(12, 15);
             percentMalin.TabIndex = 58;
@@ -588,14 +594,14 @@
             // 
             // malinCount
             // 
-            malinCount.Location = new Point(155, 515);
+            malinCount.Location = new Point(413, 35);
             malinCount.Name = "malinCount";
             malinCount.Size = new Size(34, 23);
             malinCount.TabIndex = 57;
             // 
             // subMalin
             // 
-            subMalin.Location = new Point(119, 514);
+            subMalin.Location = new Point(377, 34);
             subMalin.Name = "subMalin";
             subMalin.Size = new Size(30, 23);
             subMalin.TabIndex = 56;
@@ -605,7 +611,7 @@
             // 
             // addMalin
             // 
-            addMalin.Location = new Point(195, 514);
+            addMalin.Location = new Point(453, 34);
             addMalin.Name = "addMalin";
             addMalin.Size = new Size(29, 23);
             addMalin.TabIndex = 55;
@@ -616,7 +622,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(155, 453);
+            label21.Location = new Point(155, 494);
             label21.Name = "label21";
             label21.Size = new Size(38, 15);
             label21.TabIndex = 54;
@@ -625,7 +631,7 @@
             // percentLache
             // 
             percentLache.AutoSize = true;
-            percentLache.Location = new Point(230, 474);
+            percentLache.Location = new Point(230, 515);
             percentLache.Name = "percentLache";
             percentLache.Size = new Size(12, 15);
             percentLache.TabIndex = 53;
@@ -633,14 +639,14 @@
             // 
             // lacheCount
             // 
-            lacheCount.Location = new Point(155, 471);
+            lacheCount.Location = new Point(155, 512);
             lacheCount.Name = "lacheCount";
             lacheCount.Size = new Size(34, 23);
             lacheCount.TabIndex = 52;
             // 
             // subLache
             // 
-            subLache.Location = new Point(119, 470);
+            subLache.Location = new Point(119, 511);
             subLache.Name = "subLache";
             subLache.Size = new Size(30, 23);
             subLache.TabIndex = 51;
@@ -650,7 +656,7 @@
             // 
             // addLache
             // 
-            addLache.Location = new Point(195, 470);
+            addLache.Location = new Point(195, 511);
             addLache.Name = "addLache";
             addLache.Size = new Size(29, 23);
             addLache.TabIndex = 50;
@@ -661,7 +667,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(155, 409);
+            label23.Location = new Point(155, 450);
             label23.Name = "label23";
             label23.Size = new Size(36, 15);
             label23.TabIndex = 49;
@@ -670,7 +676,7 @@
             // percentJovial
             // 
             percentJovial.AutoSize = true;
-            percentJovial.Location = new Point(230, 430);
+            percentJovial.Location = new Point(230, 471);
             percentJovial.Name = "percentJovial";
             percentJovial.Size = new Size(12, 15);
             percentJovial.TabIndex = 48;
@@ -678,14 +684,14 @@
             // 
             // jovialCount
             // 
-            jovialCount.Location = new Point(155, 427);
+            jovialCount.Location = new Point(155, 468);
             jovialCount.Name = "jovialCount";
             jovialCount.Size = new Size(34, 23);
             jovialCount.TabIndex = 47;
             // 
             // subJovial
             // 
-            subJovial.Location = new Point(119, 426);
+            subJovial.Location = new Point(119, 467);
             subJovial.Name = "subJovial";
             subJovial.Size = new Size(30, 23);
             subJovial.TabIndex = 46;
@@ -695,7 +701,7 @@
             // 
             // addJovial
             // 
-            addJovial.Location = new Point(195, 426);
+            addJovial.Location = new Point(195, 467);
             addJovial.Name = "addJovial";
             addJovial.Size = new Size(29, 23);
             addJovial.TabIndex = 45;
@@ -706,7 +712,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(391, 104);
+            label25.Location = new Point(413, 146);
             label25.Name = "label25";
             label25.Size = new Size(29, 15);
             label25.TabIndex = 74;
@@ -715,7 +721,7 @@
             // percentNaif
             // 
             percentNaif.AutoSize = true;
-            percentNaif.Location = new Point(466, 125);
+            percentNaif.Location = new Point(488, 167);
             percentNaif.Name = "percentNaif";
             percentNaif.Size = new Size(12, 15);
             percentNaif.TabIndex = 73;
@@ -723,14 +729,14 @@
             // 
             // naifCount
             // 
-            naifCount.Location = new Point(391, 122);
+            naifCount.Location = new Point(413, 164);
             naifCount.Name = "naifCount";
             naifCount.Size = new Size(34, 23);
             naifCount.TabIndex = 72;
             // 
             // subNaif
             // 
-            subNaif.Location = new Point(355, 121);
+            subNaif.Location = new Point(377, 163);
             subNaif.Name = "subNaif";
             subNaif.Size = new Size(30, 23);
             subNaif.TabIndex = 71;
@@ -740,7 +746,7 @@
             // 
             // addNaif
             // 
-            addNaif.Location = new Point(431, 121);
+            addNaif.Location = new Point(453, 163);
             addNaif.Name = "addNaif";
             addNaif.Size = new Size(29, 23);
             addNaif.TabIndex = 70;
@@ -751,7 +757,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(391, 60);
+            label27.Location = new Point(413, 102);
             label27.Name = "label27";
             label27.Size = new Size(51, 15);
             label27.TabIndex = 69;
@@ -760,7 +766,7 @@
             // percentMauvais
             // 
             percentMauvais.AutoSize = true;
-            percentMauvais.Location = new Point(466, 81);
+            percentMauvais.Location = new Point(488, 123);
             percentMauvais.Name = "percentMauvais";
             percentMauvais.Size = new Size(12, 15);
             percentMauvais.TabIndex = 68;
@@ -768,14 +774,14 @@
             // 
             // mauvaisCount
             // 
-            mauvaisCount.Location = new Point(391, 78);
+            mauvaisCount.Location = new Point(413, 120);
             mauvaisCount.Name = "mauvaisCount";
             mauvaisCount.Size = new Size(34, 23);
             mauvaisCount.TabIndex = 67;
             // 
             // subMauvais
             // 
-            subMauvais.Location = new Point(355, 77);
+            subMauvais.Location = new Point(377, 119);
             subMauvais.Name = "subMauvais";
             subMauvais.Size = new Size(30, 23);
             subMauvais.TabIndex = 66;
@@ -785,7 +791,7 @@
             // 
             // addMauvais
             // 
-            addMauvais.Location = new Point(431, 77);
+            addMauvais.Location = new Point(453, 119);
             addMauvais.Name = "addMauvais";
             addMauvais.Size = new Size(29, 23);
             addMauvais.TabIndex = 65;
@@ -796,7 +802,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.Location = new Point(391, 16);
+            label29.Location = new Point(413, 58);
             label29.Name = "label29";
             label29.Size = new Size(47, 15);
             label29.TabIndex = 64;
@@ -805,7 +811,7 @@
             // percentMalpoli
             // 
             percentMalpoli.AutoSize = true;
-            percentMalpoli.Location = new Point(466, 37);
+            percentMalpoli.Location = new Point(488, 79);
             percentMalpoli.Name = "percentMalpoli";
             percentMalpoli.Size = new Size(12, 15);
             percentMalpoli.TabIndex = 63;
@@ -813,14 +819,14 @@
             // 
             // malpoliCount
             // 
-            malpoliCount.Location = new Point(391, 34);
+            malpoliCount.Location = new Point(413, 76);
             malpoliCount.Name = "malpoliCount";
             malpoliCount.Size = new Size(34, 23);
             malpoliCount.TabIndex = 62;
             // 
             // subMalpoli
             // 
-            subMalpoli.Location = new Point(355, 33);
+            subMalpoli.Location = new Point(377, 75);
             subMalpoli.Name = "subMalpoli";
             subMalpoli.Size = new Size(30, 23);
             subMalpoli.TabIndex = 61;
@@ -830,7 +836,7 @@
             // 
             // addMalpoli
             // 
-            addMalpoli.Location = new Point(431, 33);
+            addMalpoli.Location = new Point(453, 75);
             addMalpoli.Name = "addMalpoli";
             addMalpoli.Size = new Size(29, 23);
             addMalpoli.TabIndex = 60;
@@ -841,7 +847,7 @@
             // label31
             // 
             label31.AutoSize = true;
-            label31.Location = new Point(391, 236);
+            label31.Location = new Point(413, 278);
             label31.Name = "label31";
             label31.Size = new Size(51, 15);
             label31.TabIndex = 89;
@@ -850,7 +856,7 @@
             // percentPudique
             // 
             percentPudique.AutoSize = true;
-            percentPudique.Location = new Point(466, 257);
+            percentPudique.Location = new Point(488, 299);
             percentPudique.Name = "percentPudique";
             percentPudique.Size = new Size(12, 15);
             percentPudique.TabIndex = 88;
@@ -858,14 +864,14 @@
             // 
             // pudiqueCount
             // 
-            pudiqueCount.Location = new Point(391, 254);
+            pudiqueCount.Location = new Point(413, 296);
             pudiqueCount.Name = "pudiqueCount";
             pudiqueCount.Size = new Size(34, 23);
             pudiqueCount.TabIndex = 87;
             // 
             // subPudique
             // 
-            subPudique.Location = new Point(355, 253);
+            subPudique.Location = new Point(377, 295);
             subPudique.Name = "subPudique";
             subPudique.Size = new Size(30, 23);
             subPudique.TabIndex = 86;
@@ -875,7 +881,7 @@
             // 
             // addPudique
             // 
-            addPudique.Location = new Point(431, 253);
+            addPudique.Location = new Point(453, 295);
             addPudique.Name = "addPudique";
             addPudique.Size = new Size(29, 23);
             addPudique.TabIndex = 85;
@@ -886,7 +892,7 @@
             // label33
             // 
             label33.AutoSize = true;
-            label33.Location = new Point(391, 192);
+            label33.Location = new Point(413, 234);
             label33.Name = "label33";
             label33.Size = new Size(49, 15);
             label33.TabIndex = 84;
@@ -895,7 +901,7 @@
             // percentPrudent
             // 
             percentPrudent.AutoSize = true;
-            percentPrudent.Location = new Point(466, 213);
+            percentPrudent.Location = new Point(488, 255);
             percentPrudent.Name = "percentPrudent";
             percentPrudent.Size = new Size(12, 15);
             percentPrudent.TabIndex = 83;
@@ -903,14 +909,14 @@
             // 
             // prudentCount
             // 
-            prudentCount.Location = new Point(391, 210);
+            prudentCount.Location = new Point(413, 252);
             prudentCount.Name = "prudentCount";
             prudentCount.Size = new Size(34, 23);
             prudentCount.TabIndex = 82;
             // 
             // subPrudent
             // 
-            subPrudent.Location = new Point(355, 209);
+            subPrudent.Location = new Point(377, 251);
             subPrudent.Name = "subPrudent";
             subPrudent.Size = new Size(30, 23);
             subPrudent.TabIndex = 81;
@@ -920,7 +926,7 @@
             // 
             // addPrudent
             // 
-            addPrudent.Location = new Point(431, 209);
+            addPrudent.Location = new Point(453, 251);
             addPrudent.Name = "addPrudent";
             addPrudent.Size = new Size(29, 23);
             addPrudent.TabIndex = 80;
@@ -931,7 +937,7 @@
             // label35
             // 
             label35.AutoSize = true;
-            label35.Location = new Point(391, 148);
+            label35.Location = new Point(413, 190);
             label35.Name = "label35";
             label35.Size = new Size(40, 15);
             label35.TabIndex = 79;
@@ -940,7 +946,7 @@
             // percentPresse
             // 
             percentPresse.AutoSize = true;
-            percentPresse.Location = new Point(466, 169);
+            percentPresse.Location = new Point(488, 211);
             percentPresse.Name = "percentPresse";
             percentPresse.Size = new Size(12, 15);
             percentPresse.TabIndex = 78;
@@ -948,14 +954,14 @@
             // 
             // presseCount
             // 
-            presseCount.Location = new Point(391, 166);
+            presseCount.Location = new Point(413, 208);
             presseCount.Name = "presseCount";
             presseCount.Size = new Size(34, 23);
             presseCount.TabIndex = 77;
             // 
             // subPresse
             // 
-            subPresse.Location = new Point(355, 165);
+            subPresse.Location = new Point(377, 207);
             subPresse.Name = "subPresse";
             subPresse.Size = new Size(30, 23);
             subPresse.TabIndex = 76;
@@ -965,7 +971,7 @@
             // 
             // addPresse
             // 
-            addPresse.Location = new Point(431, 165);
+            addPresse.Location = new Point(453, 207);
             addPresse.Name = "addPresse";
             addPresse.Size = new Size(29, 23);
             addPresse.TabIndex = 75;
@@ -976,7 +982,7 @@
             // label37
             // 
             label37.AutoSize = true;
-            label37.Location = new Point(391, 368);
+            label37.Location = new Point(413, 410);
             label37.Name = "label37";
             label37.Size = new Size(45, 15);
             label37.TabIndex = 104;
@@ -985,7 +991,7 @@
             // percentSerieux
             // 
             percentSerieux.AutoSize = true;
-            percentSerieux.Location = new Point(466, 389);
+            percentSerieux.Location = new Point(488, 431);
             percentSerieux.Name = "percentSerieux";
             percentSerieux.Size = new Size(12, 15);
             percentSerieux.TabIndex = 103;
@@ -993,14 +999,14 @@
             // 
             // serieuxCount
             // 
-            serieuxCount.Location = new Point(391, 386);
+            serieuxCount.Location = new Point(413, 428);
             serieuxCount.Name = "serieuxCount";
             serieuxCount.Size = new Size(34, 23);
             serieuxCount.TabIndex = 102;
             // 
             // subSerieux
             // 
-            subSerieux.Location = new Point(355, 385);
+            subSerieux.Location = new Point(377, 427);
             subSerieux.Name = "subSerieux";
             subSerieux.Size = new Size(30, 23);
             subSerieux.TabIndex = 101;
@@ -1010,7 +1016,7 @@
             // 
             // addSerieux
             // 
-            addSerieux.Location = new Point(431, 385);
+            addSerieux.Location = new Point(453, 427);
             addSerieux.Name = "addSerieux";
             addSerieux.Size = new Size(29, 23);
             addSerieux.TabIndex = 100;
@@ -1021,7 +1027,7 @@
             // label39
             // 
             label39.AutoSize = true;
-            label39.Location = new Point(391, 324);
+            label39.Location = new Point(413, 366);
             label39.Name = "label39";
             label39.Size = new Size(40, 15);
             label39.TabIndex = 99;
@@ -1030,7 +1036,7 @@
             // percentRigide
             // 
             percentRigide.AutoSize = true;
-            percentRigide.Location = new Point(466, 345);
+            percentRigide.Location = new Point(488, 387);
             percentRigide.Name = "percentRigide";
             percentRigide.Size = new Size(12, 15);
             percentRigide.TabIndex = 98;
@@ -1038,14 +1044,14 @@
             // 
             // rigideCount
             // 
-            rigideCount.Location = new Point(391, 342);
+            rigideCount.Location = new Point(413, 384);
             rigideCount.Name = "rigideCount";
             rigideCount.Size = new Size(34, 23);
             rigideCount.TabIndex = 97;
             // 
             // subRigide
             // 
-            subRigide.Location = new Point(355, 341);
+            subRigide.Location = new Point(377, 383);
             subRigide.Name = "subRigide";
             subRigide.Size = new Size(30, 23);
             subRigide.TabIndex = 96;
@@ -1055,7 +1061,7 @@
             // 
             // addRigide
             // 
-            addRigide.Location = new Point(431, 341);
+            addRigide.Location = new Point(453, 383);
             addRigide.Name = "addRigide";
             addRigide.Size = new Size(29, 23);
             addRigide.TabIndex = 95;
@@ -1066,7 +1072,7 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(391, 280);
+            label41.Location = new Point(413, 322);
             label41.Name = "label41";
             label41.Size = new Size(35, 15);
             label41.TabIndex = 94;
@@ -1075,7 +1081,7 @@
             // percentRelax
             // 
             percentRelax.AutoSize = true;
-            percentRelax.Location = new Point(466, 301);
+            percentRelax.Location = new Point(488, 343);
             percentRelax.Name = "percentRelax";
             percentRelax.Size = new Size(12, 15);
             percentRelax.TabIndex = 93;
@@ -1083,14 +1089,14 @@
             // 
             // relaxCount
             // 
-            relaxCount.Location = new Point(391, 298);
+            relaxCount.Location = new Point(413, 340);
             relaxCount.Name = "relaxCount";
             relaxCount.Size = new Size(34, 23);
             relaxCount.TabIndex = 92;
             // 
             // subRelax
             // 
-            subRelax.Location = new Point(355, 297);
+            subRelax.Location = new Point(377, 339);
             subRelax.Name = "subRelax";
             subRelax.Size = new Size(30, 23);
             subRelax.TabIndex = 91;
@@ -1100,7 +1106,7 @@
             // 
             // addRelax
             // 
-            addRelax.Location = new Point(431, 297);
+            addRelax.Location = new Point(453, 339);
             addRelax.Name = "addRelax";
             addRelax.Size = new Size(29, 23);
             addRelax.TabIndex = 90;
@@ -1111,31 +1117,34 @@
             // label43
             // 
             label43.AutoSize = true;
-            label43.Location = new Point(391, 500);
+            label43.Location = new Point(155, 142);
             label43.Name = "label43";
             label43.Size = new Size(41, 15);
             label43.TabIndex = 119;
             label43.Text = "Calme";
+            label43.Click += label43_Click;
             // 
             // percentCalme
             // 
             percentCalme.AutoSize = true;
-            percentCalme.Location = new Point(466, 521);
+            percentCalme.Location = new Point(230, 163);
             percentCalme.Name = "percentCalme";
             percentCalme.Size = new Size(12, 15);
             percentCalme.TabIndex = 118;
             percentCalme.Text = "-";
+            percentCalme.Click += percentCalme_Click;
             // 
             // calmeCount
             // 
-            calmeCount.Location = new Point(391, 518);
+            calmeCount.Location = new Point(155, 160);
             calmeCount.Name = "calmeCount";
             calmeCount.Size = new Size(34, 23);
             calmeCount.TabIndex = 117;
+            calmeCount.TextChanged += calmeCount_TextChanged;
             // 
             // subCalme
             // 
-            subCalme.Location = new Point(355, 517);
+            subCalme.Location = new Point(119, 159);
             subCalme.Name = "subCalme";
             subCalme.Size = new Size(30, 23);
             subCalme.TabIndex = 116;
@@ -1145,7 +1154,7 @@
             // 
             // addCalme
             // 
-            addCalme.Location = new Point(431, 517);
+            addCalme.Location = new Point(195, 159);
             addCalme.Name = "addCalme";
             addCalme.Size = new Size(29, 23);
             addCalme.TabIndex = 115;
@@ -1156,7 +1165,7 @@
             // label45
             // 
             label45.AutoSize = true;
-            label45.Location = new Point(391, 456);
+            label45.Location = new Point(413, 498);
             label45.Name = "label45";
             label45.Size = new Size(43, 15);
             label45.TabIndex = 114;
@@ -1165,7 +1174,7 @@
             // percentTimide
             // 
             percentTimide.AutoSize = true;
-            percentTimide.Location = new Point(466, 477);
+            percentTimide.Location = new Point(488, 519);
             percentTimide.Name = "percentTimide";
             percentTimide.Size = new Size(12, 15);
             percentTimide.TabIndex = 113;
@@ -1173,14 +1182,14 @@
             // 
             // timideCount
             // 
-            timideCount.Location = new Point(391, 474);
+            timideCount.Location = new Point(413, 516);
             timideCount.Name = "timideCount";
             timideCount.Size = new Size(34, 23);
             timideCount.TabIndex = 112;
             // 
             // subTimide
             // 
-            subTimide.Location = new Point(355, 473);
+            subTimide.Location = new Point(377, 515);
             subTimide.Name = "subTimide";
             subTimide.Size = new Size(30, 23);
             subTimide.TabIndex = 111;
@@ -1190,7 +1199,7 @@
             // 
             // addTimide
             // 
-            addTimide.Location = new Point(431, 473);
+            addTimide.Location = new Point(453, 515);
             addTimide.Name = "addTimide";
             addTimide.Size = new Size(29, 23);
             addTimide.TabIndex = 110;
@@ -1201,7 +1210,7 @@
             // label47
             // 
             label47.AutoSize = true;
-            label47.Location = new Point(391, 412);
+            label47.Location = new Point(413, 454);
             label47.Name = "label47";
             label47.Size = new Size(30, 15);
             label47.TabIndex = 109;
@@ -1210,7 +1219,7 @@
             // percentSolo
             // 
             percentSolo.AutoSize = true;
-            percentSolo.Location = new Point(466, 433);
+            percentSolo.Location = new Point(488, 475);
             percentSolo.Name = "percentSolo";
             percentSolo.Size = new Size(12, 15);
             percentSolo.TabIndex = 108;
@@ -1218,14 +1227,14 @@
             // 
             // soloCount
             // 
-            soloCount.Location = new Point(391, 430);
+            soloCount.Location = new Point(413, 472);
             soloCount.Name = "soloCount";
             soloCount.Size = new Size(34, 23);
             soloCount.TabIndex = 107;
             // 
             // subSolo
             // 
-            subSolo.Location = new Point(355, 429);
+            subSolo.Location = new Point(377, 471);
             subSolo.Name = "subSolo";
             subSolo.Size = new Size(30, 23);
             subSolo.TabIndex = 106;
@@ -1235,7 +1244,7 @@
             // 
             // addSolo
             // 
-            addSolo.Location = new Point(431, 429);
+            addSolo.Location = new Point(453, 471);
             addSolo.Name = "addSolo";
             addSolo.Size = new Size(29, 23);
             addSolo.TabIndex = 105;
@@ -1325,13 +1334,75 @@
             displayChartBtn.UseVisualStyleBackColor = true;
             displayChartBtn.Click += displayChartBtn_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(466, 586);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 15);
+            label1.TabIndex = 132;
+            label1.Text = "Non vérifié";
+            // 
+            // percentNotChecked
+            // 
+            percentNotChecked.AutoSize = true;
+            percentNotChecked.Location = new Point(541, 607);
+            percentNotChecked.Name = "percentNotChecked";
+            percentNotChecked.Size = new Size(12, 15);
+            percentNotChecked.TabIndex = 131;
+            percentNotChecked.Text = "-";
+            // 
+            // notCheckedCount
+            // 
+            notCheckedCount.Location = new Point(466, 604);
+            notCheckedCount.Name = "notCheckedCount";
+            notCheckedCount.Size = new Size(34, 23);
+            notCheckedCount.TabIndex = 130;
+            // 
+            // subNotChecked
+            // 
+            subNotChecked.Location = new Point(430, 603);
+            subNotChecked.Name = "subNotChecked";
+            subNotChecked.Size = new Size(30, 23);
+            subNotChecked.TabIndex = 129;
+            subNotChecked.Text = "-";
+            subNotChecked.UseVisualStyleBackColor = true;
+            subNotChecked.Click += subNotChecked_Click;
+            // 
+            // addNotChecked
+            // 
+            addNotChecked.Location = new Point(506, 603);
+            addNotChecked.Name = "addNotChecked";
+            addNotChecked.Size = new Size(29, 23);
+            addNotChecked.TabIndex = 128;
+            addNotChecked.Text = "+";
+            addNotChecked.UseVisualStyleBackColor = true;
+            addNotChecked.Click += addNotChecked_Click;
+            // 
+            // showInChartCheckBox
+            // 
+            showInChartCheckBox.AutoSize = true;
+            showInChartCheckBox.Location = new Point(431, 632);
+            showInChartCheckBox.Name = "showInChartCheckBox";
+            showInChartCheckBox.Size = new Size(143, 19);
+            showInChartCheckBox.TabIndex = 133;
+            showInChartCheckBox.Text = "Montrer dans le graph";
+            showInChartCheckBox.UseVisualStyleBackColor = true;
+            showInChartCheckBox.CheckedChanged += showInChartCheckBox_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(599, 685);
-            Controls.Add(displayChartBtn);
             Controls.Add(percentChart);
+            Controls.Add(showInChartCheckBox);
+            Controls.Add(label1);
+            Controls.Add(percentNotChecked);
+            Controls.Add(notCheckedCount);
+            Controls.Add(subNotChecked);
+            Controls.Add(addNotChecked);
+            Controls.Add(displayChartBtn);
             Controls.Add(rencontresLbl);
             Controls.Add(label49);
             Controls.Add(percentModeste);
@@ -1597,5 +1668,11 @@
         private Label rencontresLbl;
         private System.Windows.Forms.DataVisualization.Charting.Chart percentChart;
         private Button displayChartBtn;
+        private Label label1;
+        private Label percentNotChecked;
+        private TextBox notCheckedCount;
+        private Button subNotChecked;
+        private Button addNotChecked;
+        private CheckBox showInChartCheckBox;
     }
 }

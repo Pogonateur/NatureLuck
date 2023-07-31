@@ -59,6 +59,8 @@ namespace NatureLuck
         private double soloPercent = 0;
         private int timide = 0;
         private double timidePercent = 0;
+        private int notChecked = 0;
+        private double notCheckedPercent = 0;
         private int total = 0;
 
         private void reCalculatePercents()
@@ -90,6 +92,7 @@ namespace NatureLuck
                 serieuxPercent = Math.Round((double)serieux / total * 100, 2);
                 soloPercent = Math.Round((double)solo / total * 100, 2);
                 timidePercent = Math.Round((double)timide / total * 100, 2);
+                notCheckedPercent = Math.Round((double)notChecked / total * 100, 2);
             }
         }
 
@@ -122,6 +125,7 @@ namespace NatureLuck
                 percentSerieux.Text = serieuxPercent.ToString() + "%";
                 percentSolo.Text = soloPercent.ToString() + "%";
                 percentTimide.Text = timidePercent.ToString() + "%";
+                percentNotChecked.Text = notCheckedPercent.ToString() + "%";
             }
             else
             {
@@ -150,6 +154,7 @@ namespace NatureLuck
                 percentSerieux.Text = "-";
                 percentSolo.Text = "-";
                 percentTimide.Text = "-";
+                percentNotChecked.Text = "-";
             }
         }
 
@@ -186,6 +191,10 @@ namespace NatureLuck
             percentChart.Series["%age"].Points.AddXY("Sérieux", serieuxPercent);
             percentChart.Series["%age"].Points.AddXY("Solo", soloPercent);
             percentChart.Series["%age"].Points.AddXY("Timide", timidePercent);
+            if (showInChartCheckBox.Checked)
+            {
+                percentChart.Series["%age"].Points.AddXY("Non vérifié", notCheckedPercent);
+            }
         }
 
         private void subAssure_Click(object sender, EventArgs e)
@@ -811,6 +820,31 @@ namespace NatureLuck
             updateChart();
         }
 
+        private void subNotChecked_Click(object sender, EventArgs e)
+        {
+            if (notChecked > 0)
+            {
+                notChecked -= 1;
+                total -= 1;
+                notCheckedCount.Text = notChecked.ToString();
+                reCalculatePercents();
+                updatePercents();
+                updateRencontres();
+                updateChart();
+            }
+        }
+
+        private void addNotChecked_Click(object sender, EventArgs e)
+        {
+            notChecked += 1;
+            total += 1;
+            notCheckedCount.Text = notChecked.ToString();
+            reCalculatePercents();
+            updatePercents();
+            updateRencontres();
+            updateChart();
+        }
+
         private void displayChartBtn_Click(object sender, EventArgs e)
         {
             percentChart.Visible = !percentChart.Visible;
@@ -843,7 +877,13 @@ namespace NatureLuck
             percentChart.Series["%age"].Points.AddXY("Sérieux", 0);
             percentChart.Series["%age"].Points.AddXY("Solo", 0);
             percentChart.Series["%age"].Points.AddXY("Timide", 0);
+            percentChart.Series["%age"].Points.AddXY("Non vérifié", 0);
             percentChart.Series["%age"]["PixelPointWidth"] = "3";
+        }
+
+        private void showInChartCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            updateChart();
         }
     }
 }
