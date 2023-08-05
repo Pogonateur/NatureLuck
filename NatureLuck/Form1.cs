@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 
 namespace NatureLuck
 {
@@ -884,6 +885,13 @@ namespace NatureLuck
         private void showInChartCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             updateChart();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var EVDialog = new Form2();
+            var result = EVDialog.ShowDialog(this);
+            //EVDialog.Dispose();
         }
     }
 }

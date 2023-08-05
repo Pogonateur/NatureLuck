@@ -166,6 +166,7 @@
             subNotChecked = new Button();
             addNotChecked = new Button();
             showInChartCheckBox = new CheckBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)percentChart).BeginInit();
             SuspendLayout();
             // 
@@ -1387,11 +1388,22 @@
             showInChartCheckBox.UseVisualStyleBackColor = true;
             showInChartCheckBox.CheckedChanged += showInChartCheckBox_CheckedChanged;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 134;
+            button1.Text = "EV Counter";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(599, 685);
+            Controls.Add(button1);
             Controls.Add(percentChart);
             Controls.Add(showInChartCheckBox);
             Controls.Add(label1);
@@ -1671,5 +1683,6 @@
         private Button subNotChecked;
         private Button addNotChecked;
         private CheckBox showInChartCheckBox;
+        private Button button1;
     }
 }
