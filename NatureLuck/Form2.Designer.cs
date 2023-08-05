@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
             EVLeftCount = new Label();
+            linkLabel1 = new LinkLabel();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel9 = new TableLayoutPanel();
             button81 = new Button();
@@ -146,7 +148,6 @@
             button11 = new Button();
             button13 = new Button();
             button15 = new Button();
-            linkLabel1 = new LinkLabel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -197,6 +198,19 @@
             EVLeftCount.TabIndex = 0;
             EVLeftCount.Text = "Effort Values left : 510";
             EVLeftCount.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(388, 0);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(379, 37);
+            linkLabel1.TabIndex = 1;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Link for EV given by each pokemon";
+            linkLabel1.TextAlign = ContentAlignment.BottomRight;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // tableLayoutPanel2
             // 
@@ -1656,25 +1670,13 @@
             button15.UseVisualStyleBackColor = true;
             button15.Click += button15_Click;
             // 
-            // linkLabel1
-            // 
-            linkLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(388, 0);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(379, 37);
-            linkLabel1.TabIndex = 1;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Link for EV given by each pokemon";
-            linkLabel1.TextAlign = ContentAlignment.BottomRight;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
             Text = "EV Counter";
             tableLayoutPanel1.ResumeLayout(false);

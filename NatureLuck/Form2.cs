@@ -30,7 +30,7 @@ namespace NatureLuck
 
         private void modifStat(ref int stat, int valeur)
         {
-            if ((stat + valeur <= 255) && (EVleft + valeur >= 0) && (stat + valeur >= 0))
+            if ((stat + valeur <= 255) && (EVleft - valeur >= 0) && (stat + valeur >= 0))
             {
                 stat += valeur;
                 EVleft -= valeur;
