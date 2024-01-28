@@ -886,12 +886,5 @@ namespace NatureLuck
         {
             updateChart();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var EVDialog = new Form2();
-            var result = EVDialog.ShowDialog(this);
-            //EVDialog.Dispose();
-        }
     }
 }
