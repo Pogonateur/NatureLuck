@@ -166,7 +166,14 @@
             subNotChecked = new Button();
             addNotChecked = new Button();
             showInChartCheckBox = new CheckBox();
+            menuStrip1 = new MenuStrip();
+            fichierToolStripMenuItem = new ToolStripMenuItem();
+            nouveauToolStripMenuItem = new ToolStripMenuItem();
+            ouvrirToolStripMenuItem = new ToolStripMenuItem();
+            enregistrerToolStripMenuItem = new ToolStripMenuItem();
+            enregistrerSousToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)percentChart).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // addAssure
@@ -1387,6 +1394,47 @@
             showInChartCheckBox.UseVisualStyleBackColor = true;
             showInChartCheckBox.CheckedChanged += showInChartCheckBox_CheckedChanged;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(599, 24);
+            menuStrip1.TabIndex = 134;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fichierToolStripMenuItem
+            // 
+            fichierToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nouveauToolStripMenuItem, ouvrirToolStripMenuItem, enregistrerToolStripMenuItem, enregistrerSousToolStripMenuItem });
+            fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            fichierToolStripMenuItem.Size = new Size(54, 20);
+            fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // nouveauToolStripMenuItem
+            // 
+            nouveauToolStripMenuItem.Name = "nouveauToolStripMenuItem";
+            nouveauToolStripMenuItem.Size = new Size(180, 22);
+            nouveauToolStripMenuItem.Text = "Nouveau";
+            nouveauToolStripMenuItem.Click += nouveauToolStripMenuItem_Click;
+            // 
+            // ouvrirToolStripMenuItem
+            // 
+            ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
+            ouvrirToolStripMenuItem.Size = new Size(180, 22);
+            ouvrirToolStripMenuItem.Text = "Ouvrir";
+            // 
+            // enregistrerToolStripMenuItem
+            // 
+            enregistrerToolStripMenuItem.Name = "enregistrerToolStripMenuItem";
+            enregistrerToolStripMenuItem.Size = new Size(180, 22);
+            enregistrerToolStripMenuItem.Text = "Enregistrer";
+            // 
+            // enregistrerSousToolStripMenuItem
+            // 
+            enregistrerSousToolStripMenuItem.Name = "enregistrerSousToolStripMenuItem";
+            enregistrerSousToolStripMenuItem.Size = new Size(180, 22);
+            enregistrerSousToolStripMenuItem.Text = "Enregistrer sous...";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1526,11 +1574,16 @@
             Controls.Add(assureCount);
             Controls.Add(subAssure);
             Controls.Add(addAssure);
+            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "NatureLuck";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)percentChart).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1671,5 +1724,11 @@
         private Button subNotChecked;
         private Button addNotChecked;
         private CheckBox showInChartCheckBox;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fichierToolStripMenuItem;
+        private ToolStripMenuItem nouveauToolStripMenuItem;
+        private ToolStripMenuItem ouvrirToolStripMenuItem;
+        private ToolStripMenuItem enregistrerToolStripMenuItem;
+        private ToolStripMenuItem enregistrerSousToolStripMenuItem;
     }
 }

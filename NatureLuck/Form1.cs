@@ -886,5 +886,92 @@ namespace NatureLuck
         {
             updateChart();
         }
+
+        private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            assure = 0;
+            assurePercent = 0;
+            assureCount.Text = assure.ToString();
+            bizarre = 0;
+            bizarrePercent = 0;
+            bizarreCount.Text = bizarre.ToString();
+            brave = 0;
+            bravePercent = 0;
+            braveCount.Text = brave.ToString();
+            calme = 0;
+            calmePercent = 0;
+            calmeCount.Text = calme.ToString();
+            discret = 0;
+            discretPercent = 0;
+            discretCount.Text = discret.ToString();
+            docile = 0;
+            docilePercent = 0;
+            docileCount.Text = docile.ToString();
+            doux = 0;
+            douxPercent = 0;
+            douxCount.Text = doux.ToString();
+            foufou = 0;
+            foufouPercent = 0;
+            foufouCount.Text = foufou.ToString();
+            gentil = 0;
+            gentilPercent = 0;
+            gentilCount.Text = gentil.ToString();
+            hardi = 0;
+            hardiPercent = 0;
+            hardiCount.Text = hardi.ToString();
+            jovial = 0;
+            jovialPercent = 0;
+            jovialCount.Text = jovial.ToString();
+            lache = 0;
+            lachePercent = 0;
+            lacheCount.Text = lache.ToString();
+            malin = 0;
+            malinPercent = 0;
+            malinCount.Text = malin.ToString();
+            malpoli = 0;
+            malpoliPercent = 0;
+            malpoliCount.Text = malpoli.ToString();
+            mauvais = 0;
+            mauvaisPercent = 0;
+            mauvaisCount.Text = mauvais.ToString();
+            modeste = 0;
+            modestePercent = 0;
+            modesteCount.Text = modeste.ToString();
+            naif = 0;
+            naifPercent = 0;
+            naifCount.Text = naif.ToString();
+            presse = 0;
+            pressePercent = 0;
+            presseCount.Text = presse.ToString();
+            prudent = 0;
+            prudentPercent = 0;
+            prudentCount.Text = prudent.ToString();
+            pudique = 0;
+            pudiquePercent = 0;
+            pudiqueCount.Text = pudique.ToString();
+            relax = 0;
+            relaxPercent = 0;
+            relaxCount.Text = relax.ToString();
+            rigide = 0;
+            rigidePercent = 0;
+            rigideCount.Text = rigide.ToString();
+            serieux = 0;
+            serieuxPercent = 0;
+            serieuxCount.Text = serieux.ToString();
+            solo = 0;
+            soloPercent = 0;
+            soloCount.Text = solo.ToString();
+            timide = 0;
+            timidePercent = 0;
+            timideCount.Text = timide.ToString();
+            notChecked = 0;
+            notCheckedPercent = 0;
+            notCheckedCount.Text = notChecked.ToString();
+            total = 0;
+            reCalculatePercents();
+            updatePercents();
+            updateRencontres();
+            updateChart();
+        }
     }
 }
