@@ -198,6 +198,36 @@ namespace NatureLuck
             }
         }
 
+        private void updateNatures()
+        {
+            assureCount.Text = assure.ToString();
+            bizarreCount.Text = bizarre.ToString();
+            braveCount.Text = brave.ToString();
+            calmeCount.Text = calme.ToString();
+            discretCount.Text = discret.ToString();
+            docileCount.Text = docile.ToString();
+            douxCount.Text = doux.ToString();
+            foufouCount.Text = foufou.ToString();
+            gentilCount.Text = gentil.ToString();
+            hardiCount.Text = hardi.ToString();
+            jovialCount.Text = jovial.ToString();
+            lacheCount.Text = lache.ToString();
+            malinCount.Text = malin.ToString();
+            malpoliCount.Text = malpoli.ToString();
+            mauvaisCount.Text = mauvais.ToString();
+            modesteCount.Text = modeste.ToString();
+            naifCount.Text = naif.ToString();
+            presseCount.Text = presse.ToString();
+            prudentCount.Text = prudent.ToString();
+            pudiqueCount.Text = pudique.ToString();
+            relaxCount.Text = relax.ToString();
+            rigideCount.Text = rigide.ToString();
+            serieuxCount.Text = serieux.ToString();
+            soloCount.Text = solo.ToString();
+            timideCount.Text = timide.ToString();
+            notCheckedCount.Text = notChecked.ToString();
+        }
+
         private void subAssure_Click(object sender, EventArgs e)
         {
             if (assure > 0)
@@ -969,6 +999,28 @@ namespace NatureLuck
             notCheckedCount.Text = notChecked.ToString();
             total = 0;
             reCalculatePercents();
+            updatePercents();
+            updateRencontres();
+            updateChart();
+        }
+
+        private void françaisToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr");
+            this.Controls.Clear();
+            InitializeComponent();
+            updateNatures();
+            updatePercents();
+            updateRencontres();
+            updateChart();
+        }
+
+        private void anglaisToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            this.Controls.Clear();
+            InitializeComponent();
+            updateNatures();
             updatePercents();
             updateRencontres();
             updateChart();

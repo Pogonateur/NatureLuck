@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             addAssure = new Button();
             subAssure = new Button();
             assureCount = new TextBox();
@@ -172,1144 +172,742 @@
             ouvrirToolStripMenuItem = new ToolStripMenuItem();
             enregistrerToolStripMenuItem = new ToolStripMenuItem();
             enregistrerSousToolStripMenuItem = new ToolStripMenuItem();
+            langueToolStripMenuItem1 = new ToolStripMenuItem();
+            françaisToolStripMenuItem1 = new ToolStripMenuItem();
+            anglaisToolStripMenuItem1 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)percentChart).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // addAssure
             // 
-            addAssure.Location = new Point(195, 30);
+            resources.ApplyResources(addAssure, "addAssure");
             addAssure.Name = "addAssure";
-            addAssure.Size = new Size(29, 23);
-            addAssure.TabIndex = 0;
-            addAssure.Text = "+";
             addAssure.UseVisualStyleBackColor = true;
             addAssure.Click += addAssure_Click;
             // 
             // subAssure
             // 
-            subAssure.Location = new Point(119, 30);
+            resources.ApplyResources(subAssure, "subAssure");
             subAssure.Name = "subAssure";
-            subAssure.Size = new Size(30, 23);
-            subAssure.TabIndex = 1;
-            subAssure.Text = "-";
             subAssure.UseVisualStyleBackColor = true;
             subAssure.Click += subAssure_Click;
             // 
             // assureCount
             // 
-            assureCount.Location = new Point(155, 31);
+            resources.ApplyResources(assureCount, "assureCount");
             assureCount.Name = "assureCount";
-            assureCount.Size = new Size(34, 23);
-            assureCount.TabIndex = 2;
             // 
             // percentAssure
             // 
-            percentAssure.AutoSize = true;
-            percentAssure.Location = new Point(230, 34);
+            resources.ApplyResources(percentAssure, "percentAssure");
             percentAssure.Name = "percentAssure";
-            percentAssure.Size = new Size(12, 15);
-            percentAssure.TabIndex = 3;
-            percentAssure.Text = "-";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(155, 13);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(42, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Assuré";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(155, 57);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(42, 15);
-            label3.TabIndex = 9;
-            label3.Text = "Bizarre";
             // 
             // percentBizarre
             // 
-            percentBizarre.AutoSize = true;
-            percentBizarre.Location = new Point(230, 78);
+            resources.ApplyResources(percentBizarre, "percentBizarre");
             percentBizarre.Name = "percentBizarre";
-            percentBizarre.Size = new Size(12, 15);
-            percentBizarre.TabIndex = 8;
-            percentBizarre.Text = "-";
             // 
             // bizarreCount
             // 
-            bizarreCount.Location = new Point(155, 75);
+            resources.ApplyResources(bizarreCount, "bizarreCount");
             bizarreCount.Name = "bizarreCount";
-            bizarreCount.Size = new Size(34, 23);
-            bizarreCount.TabIndex = 7;
             // 
             // subBizarre
             // 
-            subBizarre.Location = new Point(119, 74);
+            resources.ApplyResources(subBizarre, "subBizarre");
             subBizarre.Name = "subBizarre";
-            subBizarre.Size = new Size(30, 23);
-            subBizarre.TabIndex = 6;
-            subBizarre.Text = "-";
             subBizarre.UseVisualStyleBackColor = true;
             subBizarre.Click += subBizarre_Click;
             // 
             // addBizarre
             // 
-            addBizarre.Location = new Point(195, 74);
+            resources.ApplyResources(addBizarre, "addBizarre");
             addBizarre.Name = "addBizarre";
-            addBizarre.Size = new Size(29, 23);
-            addBizarre.TabIndex = 5;
-            addBizarre.Text = "+";
             addBizarre.UseVisualStyleBackColor = true;
             addBizarre.Click += addBizarre_Click;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(155, 101);
+            resources.ApplyResources(label5, "label5");
             label5.Name = "label5";
-            label5.Size = new Size(36, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Brave";
             // 
             // percentBrave
             // 
-            percentBrave.AutoSize = true;
-            percentBrave.Location = new Point(230, 122);
+            resources.ApplyResources(percentBrave, "percentBrave");
             percentBrave.Name = "percentBrave";
-            percentBrave.Size = new Size(12, 15);
-            percentBrave.TabIndex = 13;
-            percentBrave.Text = "-";
             // 
             // braveCount
             // 
-            braveCount.Location = new Point(155, 119);
+            resources.ApplyResources(braveCount, "braveCount");
             braveCount.Name = "braveCount";
-            braveCount.Size = new Size(34, 23);
-            braveCount.TabIndex = 12;
             // 
             // subBrave
             // 
-            subBrave.Location = new Point(119, 118);
+            resources.ApplyResources(subBrave, "subBrave");
             subBrave.Name = "subBrave";
-            subBrave.Size = new Size(30, 23);
-            subBrave.TabIndex = 11;
-            subBrave.Text = "-";
             subBrave.UseVisualStyleBackColor = true;
             subBrave.Click += subBrave_Click;
             // 
             // addBrave
             // 
-            addBrave.Location = new Point(195, 118);
+            resources.ApplyResources(addBrave, "addBrave");
             addBrave.Name = "addBrave";
-            addBrave.Size = new Size(29, 23);
-            addBrave.TabIndex = 10;
-            addBrave.Text = "+";
             addBrave.UseVisualStyleBackColor = true;
             addBrave.Click += addBrave_Click;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(155, 274);
+            resources.ApplyResources(label7, "label7");
             label7.Name = "label7";
-            label7.Size = new Size(35, 15);
-            label7.TabIndex = 29;
-            label7.Text = "Doux";
             // 
             // percentDoux
             // 
-            percentDoux.AutoSize = true;
-            percentDoux.Location = new Point(230, 295);
+            resources.ApplyResources(percentDoux, "percentDoux");
             percentDoux.Name = "percentDoux";
-            percentDoux.Size = new Size(12, 15);
-            percentDoux.TabIndex = 28;
-            percentDoux.Text = "-";
             // 
             // douxCount
             // 
-            douxCount.Location = new Point(155, 292);
+            resources.ApplyResources(douxCount, "douxCount");
             douxCount.Name = "douxCount";
-            douxCount.Size = new Size(34, 23);
-            douxCount.TabIndex = 27;
             // 
             // subDoux
             // 
-            subDoux.Location = new Point(119, 291);
+            resources.ApplyResources(subDoux, "subDoux");
             subDoux.Name = "subDoux";
-            subDoux.Size = new Size(30, 23);
-            subDoux.TabIndex = 26;
-            subDoux.Text = "-";
             subDoux.UseVisualStyleBackColor = true;
             subDoux.Click += subDoux_Click;
             // 
             // addDoux
             // 
-            addDoux.Location = new Point(195, 291);
+            resources.ApplyResources(addDoux, "addDoux");
             addDoux.Name = "addDoux";
-            addDoux.Size = new Size(29, 23);
-            addDoux.TabIndex = 25;
-            addDoux.Text = "+";
             addDoux.UseVisualStyleBackColor = true;
             addDoux.Click += addDoux_Click;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(155, 230);
+            resources.ApplyResources(label9, "label9");
             label9.Name = "label9";
-            label9.Size = new Size(40, 15);
-            label9.TabIndex = 24;
-            label9.Text = "Docile";
             // 
             // percentDocile
             // 
-            percentDocile.AutoSize = true;
-            percentDocile.Location = new Point(230, 251);
+            resources.ApplyResources(percentDocile, "percentDocile");
             percentDocile.Name = "percentDocile";
-            percentDocile.Size = new Size(12, 15);
-            percentDocile.TabIndex = 23;
-            percentDocile.Text = "-";
             // 
             // docileCount
             // 
-            docileCount.Location = new Point(155, 248);
+            resources.ApplyResources(docileCount, "docileCount");
             docileCount.Name = "docileCount";
-            docileCount.Size = new Size(34, 23);
-            docileCount.TabIndex = 22;
             // 
             // subDocile
             // 
-            subDocile.Location = new Point(119, 247);
+            resources.ApplyResources(subDocile, "subDocile");
             subDocile.Name = "subDocile";
-            subDocile.Size = new Size(30, 23);
-            subDocile.TabIndex = 21;
-            subDocile.Text = "-";
             subDocile.UseVisualStyleBackColor = true;
             subDocile.Click += subDocile_Click;
             // 
             // addDocile
             // 
-            addDocile.Location = new Point(195, 247);
+            resources.ApplyResources(addDocile, "addDocile");
             addDocile.Name = "addDocile";
-            addDocile.Size = new Size(29, 23);
-            addDocile.TabIndex = 20;
-            addDocile.Text = "+";
             addDocile.UseVisualStyleBackColor = true;
             addDocile.Click += addDocile_Click;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(155, 186);
+            resources.ApplyResources(label11, "label11");
             label11.Name = "label11";
-            label11.Size = new Size(43, 15);
-            label11.TabIndex = 19;
-            label11.Text = "Discret";
             // 
             // percentDiscret
             // 
-            percentDiscret.AutoSize = true;
-            percentDiscret.Location = new Point(230, 207);
+            resources.ApplyResources(percentDiscret, "percentDiscret");
             percentDiscret.Name = "percentDiscret";
-            percentDiscret.Size = new Size(12, 15);
-            percentDiscret.TabIndex = 18;
-            percentDiscret.Text = "-";
             // 
             // discretCount
             // 
-            discretCount.Location = new Point(155, 204);
+            resources.ApplyResources(discretCount, "discretCount");
             discretCount.Name = "discretCount";
-            discretCount.Size = new Size(34, 23);
-            discretCount.TabIndex = 17;
             // 
             // subDiscret
             // 
-            subDiscret.Location = new Point(119, 203);
+            resources.ApplyResources(subDiscret, "subDiscret");
             subDiscret.Name = "subDiscret";
-            subDiscret.Size = new Size(30, 23);
-            subDiscret.TabIndex = 16;
-            subDiscret.Text = "-";
             subDiscret.UseVisualStyleBackColor = true;
             subDiscret.Click += subDiscret_Click;
             // 
             // addDiscret
             // 
-            addDiscret.Location = new Point(195, 203);
+            resources.ApplyResources(addDiscret, "addDiscret");
             addDiscret.Name = "addDiscret";
-            addDiscret.Size = new Size(29, 23);
-            addDiscret.TabIndex = 15;
-            addDiscret.Text = "+";
             addDiscret.UseVisualStyleBackColor = true;
             addDiscret.Click += addDiscret_Click;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(155, 406);
+            resources.ApplyResources(label13, "label13");
             label13.Name = "label13";
-            label13.Size = new Size(36, 15);
-            label13.TabIndex = 44;
-            label13.Text = "Hardi";
             // 
             // percentHardi
             // 
-            percentHardi.AutoSize = true;
-            percentHardi.Location = new Point(230, 427);
+            resources.ApplyResources(percentHardi, "percentHardi");
             percentHardi.Name = "percentHardi";
-            percentHardi.Size = new Size(12, 15);
-            percentHardi.TabIndex = 43;
-            percentHardi.Text = "-";
             // 
             // hardiCount
             // 
-            hardiCount.Location = new Point(155, 424);
+            resources.ApplyResources(hardiCount, "hardiCount");
             hardiCount.Name = "hardiCount";
-            hardiCount.Size = new Size(34, 23);
-            hardiCount.TabIndex = 42;
             // 
             // subHardi
             // 
-            subHardi.Location = new Point(119, 423);
+            resources.ApplyResources(subHardi, "subHardi");
             subHardi.Name = "subHardi";
-            subHardi.Size = new Size(30, 23);
-            subHardi.TabIndex = 41;
-            subHardi.Text = "-";
             subHardi.UseVisualStyleBackColor = true;
             subHardi.Click += subHardi_Click;
             // 
             // addHardi
             // 
-            addHardi.Location = new Point(195, 423);
+            resources.ApplyResources(addHardi, "addHardi");
             addHardi.Name = "addHardi";
-            addHardi.Size = new Size(29, 23);
-            addHardi.TabIndex = 40;
-            addHardi.Text = "+";
             addHardi.UseVisualStyleBackColor = true;
             addHardi.Click += addHardi_Click;
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(155, 362);
+            resources.ApplyResources(label15, "label15");
             label15.Name = "label15";
-            label15.Size = new Size(38, 15);
-            label15.TabIndex = 39;
-            label15.Text = "Gentil";
             // 
             // percentGentil
             // 
-            percentGentil.AutoSize = true;
-            percentGentil.Location = new Point(230, 383);
+            resources.ApplyResources(percentGentil, "percentGentil");
             percentGentil.Name = "percentGentil";
-            percentGentil.Size = new Size(12, 15);
-            percentGentil.TabIndex = 38;
-            percentGentil.Text = "-";
             // 
             // gentilCount
             // 
-            gentilCount.Location = new Point(155, 380);
+            resources.ApplyResources(gentilCount, "gentilCount");
             gentilCount.Name = "gentilCount";
-            gentilCount.Size = new Size(34, 23);
-            gentilCount.TabIndex = 37;
             // 
             // subGentil
             // 
-            subGentil.Location = new Point(119, 379);
+            resources.ApplyResources(subGentil, "subGentil");
             subGentil.Name = "subGentil";
-            subGentil.Size = new Size(30, 23);
-            subGentil.TabIndex = 36;
-            subGentil.Text = "-";
             subGentil.UseVisualStyleBackColor = true;
             subGentil.Click += subGentil_Click;
             // 
             // addGentil
             // 
-            addGentil.Location = new Point(195, 379);
+            resources.ApplyResources(addGentil, "addGentil");
             addGentil.Name = "addGentil";
-            addGentil.Size = new Size(29, 23);
-            addGentil.TabIndex = 35;
-            addGentil.Text = "+";
             addGentil.UseVisualStyleBackColor = true;
             addGentil.Click += addGentil_Click;
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(155, 318);
+            resources.ApplyResources(label17, "label17");
             label17.Name = "label17";
-            label17.Size = new Size(45, 15);
-            label17.TabIndex = 34;
-            label17.Text = "Foufou";
             // 
             // percentFoufou
             // 
-            percentFoufou.AutoSize = true;
-            percentFoufou.Location = new Point(230, 339);
+            resources.ApplyResources(percentFoufou, "percentFoufou");
             percentFoufou.Name = "percentFoufou";
-            percentFoufou.Size = new Size(12, 15);
-            percentFoufou.TabIndex = 33;
-            percentFoufou.Text = "-";
             // 
             // foufouCount
             // 
-            foufouCount.Location = new Point(155, 336);
+            resources.ApplyResources(foufouCount, "foufouCount");
             foufouCount.Name = "foufouCount";
-            foufouCount.Size = new Size(34, 23);
-            foufouCount.TabIndex = 32;
             // 
             // subFou
             // 
-            subFou.Location = new Point(119, 335);
+            resources.ApplyResources(subFou, "subFou");
             subFou.Name = "subFou";
-            subFou.Size = new Size(30, 23);
-            subFou.TabIndex = 31;
-            subFou.Text = "-";
             subFou.UseVisualStyleBackColor = true;
             subFou.Click += subFou_Click;
             // 
             // addFou
             // 
-            addFou.Location = new Point(195, 335);
+            resources.ApplyResources(addFou, "addFou");
             addFou.Name = "addFou";
-            addFou.Size = new Size(29, 23);
-            addFou.TabIndex = 30;
-            addFou.Text = "+";
             addFou.UseVisualStyleBackColor = true;
             addFou.Click += addFou_Click;
             // 
             // label19
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(413, 17);
+            resources.ApplyResources(label19, "label19");
             label19.Name = "label19";
-            label19.Size = new Size(37, 15);
-            label19.TabIndex = 59;
-            label19.Text = "Malin";
             // 
             // percentMalin
             // 
-            percentMalin.AutoSize = true;
-            percentMalin.Location = new Point(488, 38);
+            resources.ApplyResources(percentMalin, "percentMalin");
             percentMalin.Name = "percentMalin";
-            percentMalin.Size = new Size(12, 15);
-            percentMalin.TabIndex = 58;
-            percentMalin.Text = "-";
             // 
             // malinCount
             // 
-            malinCount.Location = new Point(413, 35);
+            resources.ApplyResources(malinCount, "malinCount");
             malinCount.Name = "malinCount";
-            malinCount.Size = new Size(34, 23);
-            malinCount.TabIndex = 57;
             // 
             // subMalin
             // 
-            subMalin.Location = new Point(377, 34);
+            resources.ApplyResources(subMalin, "subMalin");
             subMalin.Name = "subMalin";
-            subMalin.Size = new Size(30, 23);
-            subMalin.TabIndex = 56;
-            subMalin.Text = "-";
             subMalin.UseVisualStyleBackColor = true;
             subMalin.Click += subMalin_Click;
             // 
             // addMalin
             // 
-            addMalin.Location = new Point(453, 34);
+            resources.ApplyResources(addMalin, "addMalin");
             addMalin.Name = "addMalin";
-            addMalin.Size = new Size(29, 23);
-            addMalin.TabIndex = 55;
-            addMalin.Text = "+";
             addMalin.UseVisualStyleBackColor = true;
             addMalin.Click += addMalin_Click;
             // 
             // label21
             // 
-            label21.AutoSize = true;
-            label21.Location = new Point(155, 494);
+            resources.ApplyResources(label21, "label21");
             label21.Name = "label21";
-            label21.Size = new Size(38, 15);
-            label21.TabIndex = 54;
-            label21.Text = "Lâche";
             // 
             // percentLache
             // 
-            percentLache.AutoSize = true;
-            percentLache.Location = new Point(230, 515);
+            resources.ApplyResources(percentLache, "percentLache");
             percentLache.Name = "percentLache";
-            percentLache.Size = new Size(12, 15);
-            percentLache.TabIndex = 53;
-            percentLache.Text = "-";
             // 
             // lacheCount
             // 
-            lacheCount.Location = new Point(155, 512);
+            resources.ApplyResources(lacheCount, "lacheCount");
             lacheCount.Name = "lacheCount";
-            lacheCount.Size = new Size(34, 23);
-            lacheCount.TabIndex = 52;
             // 
             // subLache
             // 
-            subLache.Location = new Point(119, 511);
+            resources.ApplyResources(subLache, "subLache");
             subLache.Name = "subLache";
-            subLache.Size = new Size(30, 23);
-            subLache.TabIndex = 51;
-            subLache.Text = "-";
             subLache.UseVisualStyleBackColor = true;
             subLache.Click += subLache_Click;
             // 
             // addLache
             // 
-            addLache.Location = new Point(195, 511);
+            resources.ApplyResources(addLache, "addLache");
             addLache.Name = "addLache";
-            addLache.Size = new Size(29, 23);
-            addLache.TabIndex = 50;
-            addLache.Text = "+";
             addLache.UseVisualStyleBackColor = true;
             addLache.Click += addLache_Click;
             // 
             // label23
             // 
-            label23.AutoSize = true;
-            label23.Location = new Point(155, 450);
+            resources.ApplyResources(label23, "label23");
             label23.Name = "label23";
-            label23.Size = new Size(36, 15);
-            label23.TabIndex = 49;
-            label23.Text = "Jovial";
             // 
             // percentJovial
             // 
-            percentJovial.AutoSize = true;
-            percentJovial.Location = new Point(230, 471);
+            resources.ApplyResources(percentJovial, "percentJovial");
             percentJovial.Name = "percentJovial";
-            percentJovial.Size = new Size(12, 15);
-            percentJovial.TabIndex = 48;
-            percentJovial.Text = "-";
             // 
             // jovialCount
             // 
-            jovialCount.Location = new Point(155, 468);
+            resources.ApplyResources(jovialCount, "jovialCount");
             jovialCount.Name = "jovialCount";
-            jovialCount.Size = new Size(34, 23);
-            jovialCount.TabIndex = 47;
             // 
             // subJovial
             // 
-            subJovial.Location = new Point(119, 467);
+            resources.ApplyResources(subJovial, "subJovial");
             subJovial.Name = "subJovial";
-            subJovial.Size = new Size(30, 23);
-            subJovial.TabIndex = 46;
-            subJovial.Text = "-";
             subJovial.UseVisualStyleBackColor = true;
             subJovial.Click += subJovial_Click;
             // 
             // addJovial
             // 
-            addJovial.Location = new Point(195, 467);
+            resources.ApplyResources(addJovial, "addJovial");
             addJovial.Name = "addJovial";
-            addJovial.Size = new Size(29, 23);
-            addJovial.TabIndex = 45;
-            addJovial.Text = "+";
             addJovial.UseVisualStyleBackColor = true;
             addJovial.Click += addJovial_Click;
             // 
             // label25
             // 
-            label25.AutoSize = true;
-            label25.Location = new Point(413, 146);
+            resources.ApplyResources(label25, "label25");
             label25.Name = "label25";
-            label25.Size = new Size(29, 15);
-            label25.TabIndex = 74;
-            label25.Text = "Naïf";
             // 
             // percentNaif
             // 
-            percentNaif.AutoSize = true;
-            percentNaif.Location = new Point(488, 167);
+            resources.ApplyResources(percentNaif, "percentNaif");
             percentNaif.Name = "percentNaif";
-            percentNaif.Size = new Size(12, 15);
-            percentNaif.TabIndex = 73;
-            percentNaif.Text = "-";
             // 
             // naifCount
             // 
-            naifCount.Location = new Point(413, 164);
+            resources.ApplyResources(naifCount, "naifCount");
             naifCount.Name = "naifCount";
-            naifCount.Size = new Size(34, 23);
-            naifCount.TabIndex = 72;
             // 
             // subNaif
             // 
-            subNaif.Location = new Point(377, 163);
+            resources.ApplyResources(subNaif, "subNaif");
             subNaif.Name = "subNaif";
-            subNaif.Size = new Size(30, 23);
-            subNaif.TabIndex = 71;
-            subNaif.Text = "-";
             subNaif.UseVisualStyleBackColor = true;
             subNaif.Click += subNaif_Click;
             // 
             // addNaif
             // 
-            addNaif.Location = new Point(453, 163);
+            resources.ApplyResources(addNaif, "addNaif");
             addNaif.Name = "addNaif";
-            addNaif.Size = new Size(29, 23);
-            addNaif.TabIndex = 70;
-            addNaif.Text = "+";
             addNaif.UseVisualStyleBackColor = true;
             addNaif.Click += addNaif_Click;
             // 
             // label27
             // 
-            label27.AutoSize = true;
-            label27.Location = new Point(413, 102);
+            resources.ApplyResources(label27, "label27");
             label27.Name = "label27";
-            label27.Size = new Size(51, 15);
-            label27.TabIndex = 69;
-            label27.Text = "Mauvais";
             // 
             // percentMauvais
             // 
-            percentMauvais.AutoSize = true;
-            percentMauvais.Location = new Point(488, 123);
+            resources.ApplyResources(percentMauvais, "percentMauvais");
             percentMauvais.Name = "percentMauvais";
-            percentMauvais.Size = new Size(12, 15);
-            percentMauvais.TabIndex = 68;
-            percentMauvais.Text = "-";
             // 
             // mauvaisCount
             // 
-            mauvaisCount.Location = new Point(413, 120);
+            resources.ApplyResources(mauvaisCount, "mauvaisCount");
             mauvaisCount.Name = "mauvaisCount";
-            mauvaisCount.Size = new Size(34, 23);
-            mauvaisCount.TabIndex = 67;
             // 
             // subMauvais
             // 
-            subMauvais.Location = new Point(377, 119);
+            resources.ApplyResources(subMauvais, "subMauvais");
             subMauvais.Name = "subMauvais";
-            subMauvais.Size = new Size(30, 23);
-            subMauvais.TabIndex = 66;
-            subMauvais.Text = "-";
             subMauvais.UseVisualStyleBackColor = true;
             subMauvais.Click += subMauvais_Click;
             // 
             // addMauvais
             // 
-            addMauvais.Location = new Point(453, 119);
+            resources.ApplyResources(addMauvais, "addMauvais");
             addMauvais.Name = "addMauvais";
-            addMauvais.Size = new Size(29, 23);
-            addMauvais.TabIndex = 65;
-            addMauvais.Text = "+";
             addMauvais.UseVisualStyleBackColor = true;
             addMauvais.Click += addMauvais_Click;
             // 
             // label29
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(413, 58);
+            resources.ApplyResources(label29, "label29");
             label29.Name = "label29";
-            label29.Size = new Size(47, 15);
-            label29.TabIndex = 64;
-            label29.Text = "Malpoli";
             // 
             // percentMalpoli
             // 
-            percentMalpoli.AutoSize = true;
-            percentMalpoli.Location = new Point(488, 79);
+            resources.ApplyResources(percentMalpoli, "percentMalpoli");
             percentMalpoli.Name = "percentMalpoli";
-            percentMalpoli.Size = new Size(12, 15);
-            percentMalpoli.TabIndex = 63;
-            percentMalpoli.Text = "-";
             // 
             // malpoliCount
             // 
-            malpoliCount.Location = new Point(413, 76);
+            resources.ApplyResources(malpoliCount, "malpoliCount");
             malpoliCount.Name = "malpoliCount";
-            malpoliCount.Size = new Size(34, 23);
-            malpoliCount.TabIndex = 62;
             // 
             // subMalpoli
             // 
-            subMalpoli.Location = new Point(377, 75);
+            resources.ApplyResources(subMalpoli, "subMalpoli");
             subMalpoli.Name = "subMalpoli";
-            subMalpoli.Size = new Size(30, 23);
-            subMalpoli.TabIndex = 61;
-            subMalpoli.Text = "-";
             subMalpoli.UseVisualStyleBackColor = true;
             subMalpoli.Click += subMalpoli_Click;
             // 
             // addMalpoli
             // 
-            addMalpoli.Location = new Point(453, 75);
+            resources.ApplyResources(addMalpoli, "addMalpoli");
             addMalpoli.Name = "addMalpoli";
-            addMalpoli.Size = new Size(29, 23);
-            addMalpoli.TabIndex = 60;
-            addMalpoli.Text = "+";
             addMalpoli.UseVisualStyleBackColor = true;
             addMalpoli.Click += addMalpoli_Click;
             // 
             // label31
             // 
-            label31.AutoSize = true;
-            label31.Location = new Point(413, 278);
+            resources.ApplyResources(label31, "label31");
             label31.Name = "label31";
-            label31.Size = new Size(51, 15);
-            label31.TabIndex = 89;
-            label31.Text = "Pudique";
             // 
             // percentPudique
             // 
-            percentPudique.AutoSize = true;
-            percentPudique.Location = new Point(488, 299);
+            resources.ApplyResources(percentPudique, "percentPudique");
             percentPudique.Name = "percentPudique";
-            percentPudique.Size = new Size(12, 15);
-            percentPudique.TabIndex = 88;
-            percentPudique.Text = "-";
             // 
             // pudiqueCount
             // 
-            pudiqueCount.Location = new Point(413, 296);
+            resources.ApplyResources(pudiqueCount, "pudiqueCount");
             pudiqueCount.Name = "pudiqueCount";
-            pudiqueCount.Size = new Size(34, 23);
-            pudiqueCount.TabIndex = 87;
             // 
             // subPudique
             // 
-            subPudique.Location = new Point(377, 295);
+            resources.ApplyResources(subPudique, "subPudique");
             subPudique.Name = "subPudique";
-            subPudique.Size = new Size(30, 23);
-            subPudique.TabIndex = 86;
-            subPudique.Text = "-";
             subPudique.UseVisualStyleBackColor = true;
             subPudique.Click += subPudique_Click;
             // 
             // addPudique
             // 
-            addPudique.Location = new Point(453, 295);
+            resources.ApplyResources(addPudique, "addPudique");
             addPudique.Name = "addPudique";
-            addPudique.Size = new Size(29, 23);
-            addPudique.TabIndex = 85;
-            addPudique.Text = "+";
             addPudique.UseVisualStyleBackColor = true;
             addPudique.Click += addPudique_Click;
             // 
             // label33
             // 
-            label33.AutoSize = true;
-            label33.Location = new Point(413, 234);
+            resources.ApplyResources(label33, "label33");
             label33.Name = "label33";
-            label33.Size = new Size(49, 15);
-            label33.TabIndex = 84;
-            label33.Text = "Prudent";
             // 
             // percentPrudent
             // 
-            percentPrudent.AutoSize = true;
-            percentPrudent.Location = new Point(488, 255);
+            resources.ApplyResources(percentPrudent, "percentPrudent");
             percentPrudent.Name = "percentPrudent";
-            percentPrudent.Size = new Size(12, 15);
-            percentPrudent.TabIndex = 83;
-            percentPrudent.Text = "-";
             // 
             // prudentCount
             // 
-            prudentCount.Location = new Point(413, 252);
+            resources.ApplyResources(prudentCount, "prudentCount");
             prudentCount.Name = "prudentCount";
-            prudentCount.Size = new Size(34, 23);
-            prudentCount.TabIndex = 82;
             // 
             // subPrudent
             // 
-            subPrudent.Location = new Point(377, 251);
+            resources.ApplyResources(subPrudent, "subPrudent");
             subPrudent.Name = "subPrudent";
-            subPrudent.Size = new Size(30, 23);
-            subPrudent.TabIndex = 81;
-            subPrudent.Text = "-";
             subPrudent.UseVisualStyleBackColor = true;
             subPrudent.Click += subPrudent_Click;
             // 
             // addPrudent
             // 
-            addPrudent.Location = new Point(453, 251);
+            resources.ApplyResources(addPrudent, "addPrudent");
             addPrudent.Name = "addPrudent";
-            addPrudent.Size = new Size(29, 23);
-            addPrudent.TabIndex = 80;
-            addPrudent.Text = "+";
             addPrudent.UseVisualStyleBackColor = true;
             addPrudent.Click += addPrudent_Click;
             // 
             // label35
             // 
-            label35.AutoSize = true;
-            label35.Location = new Point(413, 190);
+            resources.ApplyResources(label35, "label35");
             label35.Name = "label35";
-            label35.Size = new Size(40, 15);
-            label35.TabIndex = 79;
-            label35.Text = "Pressé";
             // 
             // percentPresse
             // 
-            percentPresse.AutoSize = true;
-            percentPresse.Location = new Point(488, 211);
+            resources.ApplyResources(percentPresse, "percentPresse");
             percentPresse.Name = "percentPresse";
-            percentPresse.Size = new Size(12, 15);
-            percentPresse.TabIndex = 78;
-            percentPresse.Text = "-";
             // 
             // presseCount
             // 
-            presseCount.Location = new Point(413, 208);
+            resources.ApplyResources(presseCount, "presseCount");
             presseCount.Name = "presseCount";
-            presseCount.Size = new Size(34, 23);
-            presseCount.TabIndex = 77;
             // 
             // subPresse
             // 
-            subPresse.Location = new Point(377, 207);
+            resources.ApplyResources(subPresse, "subPresse");
             subPresse.Name = "subPresse";
-            subPresse.Size = new Size(30, 23);
-            subPresse.TabIndex = 76;
-            subPresse.Text = "-";
             subPresse.UseVisualStyleBackColor = true;
             subPresse.Click += subPresse_Click;
             // 
             // addPresse
             // 
-            addPresse.Location = new Point(453, 207);
+            resources.ApplyResources(addPresse, "addPresse");
             addPresse.Name = "addPresse";
-            addPresse.Size = new Size(29, 23);
-            addPresse.TabIndex = 75;
-            addPresse.Text = "+";
             addPresse.UseVisualStyleBackColor = true;
             addPresse.Click += addPresse_Click;
             // 
             // label37
             // 
-            label37.AutoSize = true;
-            label37.Location = new Point(413, 410);
+            resources.ApplyResources(label37, "label37");
             label37.Name = "label37";
-            label37.Size = new Size(45, 15);
-            label37.TabIndex = 104;
-            label37.Text = "Sérieux";
             // 
             // percentSerieux
             // 
-            percentSerieux.AutoSize = true;
-            percentSerieux.Location = new Point(488, 431);
+            resources.ApplyResources(percentSerieux, "percentSerieux");
             percentSerieux.Name = "percentSerieux";
-            percentSerieux.Size = new Size(12, 15);
-            percentSerieux.TabIndex = 103;
-            percentSerieux.Text = "-";
             // 
             // serieuxCount
             // 
-            serieuxCount.Location = new Point(413, 428);
+            resources.ApplyResources(serieuxCount, "serieuxCount");
             serieuxCount.Name = "serieuxCount";
-            serieuxCount.Size = new Size(34, 23);
-            serieuxCount.TabIndex = 102;
             // 
             // subSerieux
             // 
-            subSerieux.Location = new Point(377, 427);
+            resources.ApplyResources(subSerieux, "subSerieux");
             subSerieux.Name = "subSerieux";
-            subSerieux.Size = new Size(30, 23);
-            subSerieux.TabIndex = 101;
-            subSerieux.Text = "-";
             subSerieux.UseVisualStyleBackColor = true;
             subSerieux.Click += subSerieux_Click;
             // 
             // addSerieux
             // 
-            addSerieux.Location = new Point(453, 427);
+            resources.ApplyResources(addSerieux, "addSerieux");
             addSerieux.Name = "addSerieux";
-            addSerieux.Size = new Size(29, 23);
-            addSerieux.TabIndex = 100;
-            addSerieux.Text = "+";
             addSerieux.UseVisualStyleBackColor = true;
             addSerieux.Click += addSerieux_Click;
             // 
             // label39
             // 
-            label39.AutoSize = true;
-            label39.Location = new Point(413, 366);
+            resources.ApplyResources(label39, "label39");
             label39.Name = "label39";
-            label39.Size = new Size(40, 15);
-            label39.TabIndex = 99;
-            label39.Text = "Rigide";
             // 
             // percentRigide
             // 
-            percentRigide.AutoSize = true;
-            percentRigide.Location = new Point(488, 387);
+            resources.ApplyResources(percentRigide, "percentRigide");
             percentRigide.Name = "percentRigide";
-            percentRigide.Size = new Size(12, 15);
-            percentRigide.TabIndex = 98;
-            percentRigide.Text = "-";
             // 
             // rigideCount
             // 
-            rigideCount.Location = new Point(413, 384);
+            resources.ApplyResources(rigideCount, "rigideCount");
             rigideCount.Name = "rigideCount";
-            rigideCount.Size = new Size(34, 23);
-            rigideCount.TabIndex = 97;
             // 
             // subRigide
             // 
-            subRigide.Location = new Point(377, 383);
+            resources.ApplyResources(subRigide, "subRigide");
             subRigide.Name = "subRigide";
-            subRigide.Size = new Size(30, 23);
-            subRigide.TabIndex = 96;
-            subRigide.Text = "-";
             subRigide.UseVisualStyleBackColor = true;
             subRigide.Click += subRigide_Click;
             // 
             // addRigide
             // 
-            addRigide.Location = new Point(453, 383);
+            resources.ApplyResources(addRigide, "addRigide");
             addRigide.Name = "addRigide";
-            addRigide.Size = new Size(29, 23);
-            addRigide.TabIndex = 95;
-            addRigide.Text = "+";
             addRigide.UseVisualStyleBackColor = true;
             addRigide.Click += addRigide_Click;
             // 
             // label41
             // 
-            label41.AutoSize = true;
-            label41.Location = new Point(413, 322);
+            resources.ApplyResources(label41, "label41");
             label41.Name = "label41";
-            label41.Size = new Size(35, 15);
-            label41.TabIndex = 94;
-            label41.Text = "Relax";
             // 
             // percentRelax
             // 
-            percentRelax.AutoSize = true;
-            percentRelax.Location = new Point(488, 343);
+            resources.ApplyResources(percentRelax, "percentRelax");
             percentRelax.Name = "percentRelax";
-            percentRelax.Size = new Size(12, 15);
-            percentRelax.TabIndex = 93;
-            percentRelax.Text = "-";
             // 
             // relaxCount
             // 
-            relaxCount.Location = new Point(413, 340);
+            resources.ApplyResources(relaxCount, "relaxCount");
             relaxCount.Name = "relaxCount";
-            relaxCount.Size = new Size(34, 23);
-            relaxCount.TabIndex = 92;
             // 
             // subRelax
             // 
-            subRelax.Location = new Point(377, 339);
+            resources.ApplyResources(subRelax, "subRelax");
             subRelax.Name = "subRelax";
-            subRelax.Size = new Size(30, 23);
-            subRelax.TabIndex = 91;
-            subRelax.Text = "-";
             subRelax.UseVisualStyleBackColor = true;
             subRelax.Click += subRelax_Click;
             // 
             // addRelax
             // 
-            addRelax.Location = new Point(453, 339);
+            resources.ApplyResources(addRelax, "addRelax");
             addRelax.Name = "addRelax";
-            addRelax.Size = new Size(29, 23);
-            addRelax.TabIndex = 90;
-            addRelax.Text = "+";
             addRelax.UseVisualStyleBackColor = true;
             addRelax.Click += addRelax_Click;
             // 
             // label43
             // 
-            label43.AutoSize = true;
-            label43.Location = new Point(155, 142);
+            resources.ApplyResources(label43, "label43");
             label43.Name = "label43";
-            label43.Size = new Size(41, 15);
-            label43.TabIndex = 119;
-            label43.Text = "Calme";
             // 
             // percentCalme
             // 
-            percentCalme.AutoSize = true;
-            percentCalme.Location = new Point(230, 163);
+            resources.ApplyResources(percentCalme, "percentCalme");
             percentCalme.Name = "percentCalme";
-            percentCalme.Size = new Size(12, 15);
-            percentCalme.TabIndex = 118;
-            percentCalme.Text = "-";
             // 
             // calmeCount
             // 
-            calmeCount.Location = new Point(155, 160);
+            resources.ApplyResources(calmeCount, "calmeCount");
             calmeCount.Name = "calmeCount";
-            calmeCount.Size = new Size(34, 23);
-            calmeCount.TabIndex = 117;
             // 
             // subCalme
             // 
-            subCalme.Location = new Point(119, 159);
+            resources.ApplyResources(subCalme, "subCalme");
             subCalme.Name = "subCalme";
-            subCalme.Size = new Size(30, 23);
-            subCalme.TabIndex = 116;
-            subCalme.Text = "-";
             subCalme.UseVisualStyleBackColor = true;
             subCalme.Click += subCalme_Click;
             // 
             // addCalme
             // 
-            addCalme.Location = new Point(195, 159);
+            resources.ApplyResources(addCalme, "addCalme");
             addCalme.Name = "addCalme";
-            addCalme.Size = new Size(29, 23);
-            addCalme.TabIndex = 115;
-            addCalme.Text = "+";
             addCalme.UseVisualStyleBackColor = true;
             addCalme.Click += addCalme_Click;
             // 
             // label45
             // 
-            label45.AutoSize = true;
-            label45.Location = new Point(413, 498);
+            resources.ApplyResources(label45, "label45");
             label45.Name = "label45";
-            label45.Size = new Size(43, 15);
-            label45.TabIndex = 114;
-            label45.Text = "Timide";
             // 
             // percentTimide
             // 
-            percentTimide.AutoSize = true;
-            percentTimide.Location = new Point(488, 519);
+            resources.ApplyResources(percentTimide, "percentTimide");
             percentTimide.Name = "percentTimide";
-            percentTimide.Size = new Size(12, 15);
-            percentTimide.TabIndex = 113;
-            percentTimide.Text = "-";
             // 
             // timideCount
             // 
-            timideCount.Location = new Point(413, 516);
+            resources.ApplyResources(timideCount, "timideCount");
             timideCount.Name = "timideCount";
-            timideCount.Size = new Size(34, 23);
-            timideCount.TabIndex = 112;
             // 
             // subTimide
             // 
-            subTimide.Location = new Point(377, 515);
+            resources.ApplyResources(subTimide, "subTimide");
             subTimide.Name = "subTimide";
-            subTimide.Size = new Size(30, 23);
-            subTimide.TabIndex = 111;
-            subTimide.Text = "-";
             subTimide.UseVisualStyleBackColor = true;
             subTimide.Click += subTimide_Click;
             // 
             // addTimide
             // 
-            addTimide.Location = new Point(453, 515);
+            resources.ApplyResources(addTimide, "addTimide");
             addTimide.Name = "addTimide";
-            addTimide.Size = new Size(29, 23);
-            addTimide.TabIndex = 110;
-            addTimide.Text = "+";
             addTimide.UseVisualStyleBackColor = true;
             addTimide.Click += addTimide_Click;
             // 
             // label47
             // 
-            label47.AutoSize = true;
-            label47.Location = new Point(413, 454);
+            resources.ApplyResources(label47, "label47");
             label47.Name = "label47";
-            label47.Size = new Size(30, 15);
-            label47.TabIndex = 109;
-            label47.Text = "Solo";
             // 
             // percentSolo
             // 
-            percentSolo.AutoSize = true;
-            percentSolo.Location = new Point(488, 475);
+            resources.ApplyResources(percentSolo, "percentSolo");
             percentSolo.Name = "percentSolo";
-            percentSolo.Size = new Size(12, 15);
-            percentSolo.TabIndex = 108;
-            percentSolo.Text = "-";
             // 
             // soloCount
             // 
-            soloCount.Location = new Point(413, 472);
+            resources.ApplyResources(soloCount, "soloCount");
             soloCount.Name = "soloCount";
-            soloCount.Size = new Size(34, 23);
-            soloCount.TabIndex = 107;
             // 
             // subSolo
             // 
-            subSolo.Location = new Point(377, 471);
+            resources.ApplyResources(subSolo, "subSolo");
             subSolo.Name = "subSolo";
-            subSolo.Size = new Size(30, 23);
-            subSolo.TabIndex = 106;
-            subSolo.Text = "-";
             subSolo.UseVisualStyleBackColor = true;
             subSolo.Click += subSolo_Click;
             // 
             // addSolo
             // 
-            addSolo.Location = new Point(453, 471);
+            resources.ApplyResources(addSolo, "addSolo");
             addSolo.Name = "addSolo";
-            addSolo.Size = new Size(29, 23);
-            addSolo.TabIndex = 105;
-            addSolo.Text = "+";
             addSolo.UseVisualStyleBackColor = true;
             addSolo.Click += addSolo_Click;
             // 
             // label49
             // 
-            label49.AutoSize = true;
-            label49.Location = new Point(272, 587);
+            resources.ApplyResources(label49, "label49");
             label49.Name = "label49";
-            label49.Size = new Size(53, 15);
-            label49.TabIndex = 124;
-            label49.Text = "Modeste";
             // 
             // percentModeste
             // 
-            percentModeste.AutoSize = true;
-            percentModeste.Location = new Point(347, 608);
+            resources.ApplyResources(percentModeste, "percentModeste");
             percentModeste.Name = "percentModeste";
-            percentModeste.Size = new Size(12, 15);
-            percentModeste.TabIndex = 123;
-            percentModeste.Text = "-";
             // 
             // modesteCount
             // 
-            modesteCount.Location = new Point(272, 605);
+            resources.ApplyResources(modesteCount, "modesteCount");
             modesteCount.Name = "modesteCount";
-            modesteCount.Size = new Size(34, 23);
-            modesteCount.TabIndex = 122;
             // 
             // subModeste
             // 
-            subModeste.Location = new Point(236, 604);
+            resources.ApplyResources(subModeste, "subModeste");
             subModeste.Name = "subModeste";
-            subModeste.Size = new Size(30, 23);
-            subModeste.TabIndex = 121;
-            subModeste.Text = "-";
             subModeste.UseVisualStyleBackColor = true;
             subModeste.Click += subModeste_Click;
             // 
             // addModeste
             // 
-            addModeste.Location = new Point(312, 604);
+            resources.ApplyResources(addModeste, "addModeste");
             addModeste.Name = "addModeste";
-            addModeste.Size = new Size(29, 23);
-            addModeste.TabIndex = 120;
-            addModeste.Text = "+";
             addModeste.UseVisualStyleBackColor = true;
             addModeste.Click += addModeste_Click;
             // 
             // rencontresLbl
             // 
-            rencontresLbl.AutoSize = true;
-            rencontresLbl.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rencontresLbl.Location = new Point(12, 646);
+            resources.ApplyResources(rencontresLbl, "rencontresLbl");
             rencontresLbl.Name = "rencontresLbl";
-            rencontresLbl.Size = new Size(140, 30);
-            rencontresLbl.TabIndex = 125;
-            rencontresLbl.Text = "Rencontrés : ";
             // 
             // percentChart
             // 
@@ -1317,130 +915,111 @@
             percentChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             percentChart.Legends.Add(legend1);
-            percentChart.Location = new Point(12, 338);
+            resources.ApplyResources(percentChart, "percentChart");
             percentChart.Name = "percentChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "%age";
             percentChart.Series.Add(series1);
-            percentChart.Size = new Size(575, 300);
-            percentChart.TabIndex = 126;
-            percentChart.Text = "Graphique en barre des pourcents";
-            percentChart.Visible = false;
             // 
             // displayChartBtn
             // 
-            displayChartBtn.Location = new Point(12, 309);
+            resources.ApplyResources(displayChartBtn, "displayChartBtn");
             displayChartBtn.Name = "displayChartBtn";
-            displayChartBtn.Size = new Size(75, 23);
-            displayChartBtn.TabIndex = 127;
-            displayChartBtn.Text = "Graph";
             displayChartBtn.UseVisualStyleBackColor = true;
             displayChartBtn.Click += displayChartBtn_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(466, 586);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(65, 15);
-            label1.TabIndex = 132;
-            label1.Text = "Non vérifié";
             // 
             // percentNotChecked
             // 
-            percentNotChecked.AutoSize = true;
-            percentNotChecked.Location = new Point(541, 607);
+            resources.ApplyResources(percentNotChecked, "percentNotChecked");
             percentNotChecked.Name = "percentNotChecked";
-            percentNotChecked.Size = new Size(12, 15);
-            percentNotChecked.TabIndex = 131;
-            percentNotChecked.Text = "-";
             // 
             // notCheckedCount
             // 
-            notCheckedCount.Location = new Point(466, 604);
+            resources.ApplyResources(notCheckedCount, "notCheckedCount");
             notCheckedCount.Name = "notCheckedCount";
-            notCheckedCount.Size = new Size(34, 23);
-            notCheckedCount.TabIndex = 130;
             // 
             // subNotChecked
             // 
-            subNotChecked.Location = new Point(430, 603);
+            resources.ApplyResources(subNotChecked, "subNotChecked");
             subNotChecked.Name = "subNotChecked";
-            subNotChecked.Size = new Size(30, 23);
-            subNotChecked.TabIndex = 129;
-            subNotChecked.Text = "-";
             subNotChecked.UseVisualStyleBackColor = true;
             subNotChecked.Click += subNotChecked_Click;
             // 
             // addNotChecked
             // 
-            addNotChecked.Location = new Point(506, 603);
+            resources.ApplyResources(addNotChecked, "addNotChecked");
             addNotChecked.Name = "addNotChecked";
-            addNotChecked.Size = new Size(29, 23);
-            addNotChecked.TabIndex = 128;
-            addNotChecked.Text = "+";
             addNotChecked.UseVisualStyleBackColor = true;
             addNotChecked.Click += addNotChecked_Click;
             // 
             // showInChartCheckBox
             // 
-            showInChartCheckBox.AutoSize = true;
-            showInChartCheckBox.Location = new Point(431, 632);
+            resources.ApplyResources(showInChartCheckBox, "showInChartCheckBox");
             showInChartCheckBox.Name = "showInChartCheckBox";
-            showInChartCheckBox.Size = new Size(143, 19);
-            showInChartCheckBox.TabIndex = 133;
-            showInChartCheckBox.Text = "Montrer dans le graph";
             showInChartCheckBox.UseVisualStyleBackColor = true;
             showInChartCheckBox.CheckedChanged += showInChartCheckBox_CheckedChanged;
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem, langueToolStripMenuItem1 });
+            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(599, 24);
-            menuStrip1.TabIndex = 134;
-            menuStrip1.Text = "menuStrip1";
             // 
             // fichierToolStripMenuItem
             // 
             fichierToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nouveauToolStripMenuItem, ouvrirToolStripMenuItem, enregistrerToolStripMenuItem, enregistrerSousToolStripMenuItem });
             fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            fichierToolStripMenuItem.Size = new Size(54, 20);
-            fichierToolStripMenuItem.Text = "Fichier";
+            resources.ApplyResources(fichierToolStripMenuItem, "fichierToolStripMenuItem");
             // 
             // nouveauToolStripMenuItem
             // 
             nouveauToolStripMenuItem.Name = "nouveauToolStripMenuItem";
-            nouveauToolStripMenuItem.Size = new Size(180, 22);
-            nouveauToolStripMenuItem.Text = "Nouveau";
+            resources.ApplyResources(nouveauToolStripMenuItem, "nouveauToolStripMenuItem");
             nouveauToolStripMenuItem.Click += nouveauToolStripMenuItem_Click;
             // 
             // ouvrirToolStripMenuItem
             // 
             ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            ouvrirToolStripMenuItem.Size = new Size(180, 22);
-            ouvrirToolStripMenuItem.Text = "Ouvrir";
+            resources.ApplyResources(ouvrirToolStripMenuItem, "ouvrirToolStripMenuItem");
             // 
             // enregistrerToolStripMenuItem
             // 
             enregistrerToolStripMenuItem.Name = "enregistrerToolStripMenuItem";
-            enregistrerToolStripMenuItem.Size = new Size(180, 22);
-            enregistrerToolStripMenuItem.Text = "Enregistrer";
+            resources.ApplyResources(enregistrerToolStripMenuItem, "enregistrerToolStripMenuItem");
             // 
             // enregistrerSousToolStripMenuItem
             // 
             enregistrerSousToolStripMenuItem.Name = "enregistrerSousToolStripMenuItem";
-            enregistrerSousToolStripMenuItem.Size = new Size(180, 22);
-            enregistrerSousToolStripMenuItem.Text = "Enregistrer sous...";
+            resources.ApplyResources(enregistrerSousToolStripMenuItem, "enregistrerSousToolStripMenuItem");
+            // 
+            // langueToolStripMenuItem1
+            // 
+            langueToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { françaisToolStripMenuItem1, anglaisToolStripMenuItem1 });
+            langueToolStripMenuItem1.Name = "langueToolStripMenuItem1";
+            resources.ApplyResources(langueToolStripMenuItem1, "langueToolStripMenuItem1");
+            // 
+            // françaisToolStripMenuItem1
+            // 
+            françaisToolStripMenuItem1.Name = "françaisToolStripMenuItem1";
+            resources.ApplyResources(françaisToolStripMenuItem1, "françaisToolStripMenuItem1");
+            françaisToolStripMenuItem1.Click += françaisToolStripMenuItem1_Click;
+            // 
+            // anglaisToolStripMenuItem1
+            // 
+            anglaisToolStripMenuItem1.Name = "anglaisToolStripMenuItem1";
+            resources.ApplyResources(anglaisToolStripMenuItem1, "anglaisToolStripMenuItem1");
+            anglaisToolStripMenuItem1.Click += anglaisToolStripMenuItem1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(599, 685);
-            Controls.Add(percentChart);
             Controls.Add(showInChartCheckBox);
             Controls.Add(label1);
             Controls.Add(percentNotChecked);
@@ -1575,11 +1154,9 @@
             Controls.Add(subAssure);
             Controls.Add(addAssure);
             Controls.Add(menuStrip1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
+            Controls.Add(percentChart);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "NatureLuck";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)percentChart).EndInit();
             menuStrip1.ResumeLayout(false);
@@ -1730,5 +1307,8 @@
         private ToolStripMenuItem ouvrirToolStripMenuItem;
         private ToolStripMenuItem enregistrerToolStripMenuItem;
         private ToolStripMenuItem enregistrerSousToolStripMenuItem;
+        private ToolStripMenuItem langueToolStripMenuItem1;
+        private ToolStripMenuItem françaisToolStripMenuItem1;
+        private ToolStripMenuItem anglaisToolStripMenuItem1;
     }
 }
